@@ -6,3 +6,4 @@ public class Message {
 		System.out.println("New Oct-2022 Java batch");
 	}
 }
+		
