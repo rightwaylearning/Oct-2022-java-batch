@@ -1,7 +1,7 @@
-package ajit.fargade;
+package ajit_fargade;
 
 public class ajitfargade {
 	public static void main(String[] args) {
-		System.out.println("Ajit fragade");
+		System.out.println("Ajit Fargade");
 	}
 }
