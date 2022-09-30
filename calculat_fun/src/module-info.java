@@ -1,0 +1,2 @@
+module calculat_fun {
+}
