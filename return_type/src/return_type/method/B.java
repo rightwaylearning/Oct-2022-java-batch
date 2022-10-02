@@ -1,4 +1,4 @@
-package return_type.method;
+   package return_type.method;
 
 public class B {
 
