@@ -16,7 +16,7 @@ public class Pattern1 {
 		}
 
 		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-         char ch = 'A';
+		char ch = 'A';
 		for (int r = 1; r <= 5; r++) {
 
 			for (int c = 1; c <= r; c++) {

@@ -16,7 +16,7 @@ public class A {
 	              return m;
                 }
                         int multi() {
-                     	   int n = 32*54;
+                     	   int n = a*b;
         	                   return n;
                            
                         
