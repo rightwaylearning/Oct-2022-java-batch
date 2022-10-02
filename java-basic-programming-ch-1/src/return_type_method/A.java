@@ -18,5 +18,14 @@ public class A {
                         int multi() {
                      	   int n = 32*54;
         	                   return n;
-                           }
-                                                       }
+                           
+                        
+                        } 	                   
+        	                   
+}               
+        	                   
+        	                   
+        	                   
+        	                   
+        
+                        
