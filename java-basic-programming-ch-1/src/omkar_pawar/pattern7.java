@@ -1,5 +1,5 @@
 package omkar_pawar;
 
-public class pattern7 
+public class pattern7{ 
 	   
 }
