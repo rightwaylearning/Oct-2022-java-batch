@@ -1,5 +1,7 @@
 package pattern_programming.pattern.basic.programs;
 
+import java.io.File;
+
 public class Pattern4 {
 
 	public static void main(String[] args) {
@@ -14,7 +16,17 @@ public class Pattern4 {
 			System.out.println();
 
 		}
+<<<<<<< HEAD
 
+=======
+		
+		try {
+		int m = 10/0;
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+>>>>>>> 02d904202502c777b00a7941a35fba0ed9016db9
 	}
 }
 
