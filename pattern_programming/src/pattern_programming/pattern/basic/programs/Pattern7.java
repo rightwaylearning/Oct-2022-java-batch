@@ -3,7 +3,7 @@ package pattern_programming.pattern.basic.programs;
 public class Pattern7 {
 
 	public static void main(String[] args) {
-		int r =15;
+		int r =30;
 		
 		for(int i = 1 ; i <= r ; i++) {
 			
