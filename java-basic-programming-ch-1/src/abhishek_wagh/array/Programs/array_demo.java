@@ -5,6 +5,7 @@ public class array_demo {
 
 	public static void main(String[] args) {
 		int[] a = new int[6];
+		//
 		a[0]=23;
 		a[1]=45;
 		a[2]=34;
