@@ -1,7 +1,5 @@
 package pattern_programming.pattern.basic.programs;
 
-import java.io.File;
-
 public class Pattern4 {
 
 	public static void main(String[] args) {
