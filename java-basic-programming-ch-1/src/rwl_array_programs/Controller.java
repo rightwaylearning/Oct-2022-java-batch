@@ -26,5 +26,7 @@ public class Controller {
         ShowUp show = new ShowUp();
         show.printData(s);
         
+        
+        
 	}
 }
