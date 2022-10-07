@@ -16,9 +16,9 @@ public class Pattern4 {
 			System.out.println();
 
 		}
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
-=======
+//=======
 		
 		try {
 		int m = 10/0;
@@ -26,7 +26,7 @@ public class Pattern4 {
 		catch(Exception e) {
 			System.out.println(e);
 		}
->>>>>>> 02d904202502c777b00a7941a35fba0ed9016db9
+//>>>>>>> 02d904202502c777b00a7941a35fba0ed9016db9
 	}
 }
 
