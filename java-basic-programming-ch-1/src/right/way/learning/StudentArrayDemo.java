@@ -29,6 +29,7 @@ public class StudentArrayDemo {
 		
 		
 		
+		
 		int[] x = new int[5];
 		// x is reference type variable
 		// which reference type ?? int[]
