@@ -25,6 +25,7 @@ public class Employeeofcompany {
 		                        d.id = 13;
 		              
 		        e[1] = d;
+		        
 		                Employeeofcompany f = new Employeeofcompany();
 			     		           
 		                        f.fname = "kuldip";
@@ -32,15 +33,21 @@ public class Employeeofcompany {
 		                        f.id = 14;
 		              
 		        e[2] = f;
+		       
 
                                System.out.println(e[0].fname);
                                System.out.println(e[0].lname);
                                System.out.println(e[0].id);
                                
                                
+                               System.out.println(">>>>>>>>>>>>>>>>>>>>");
+                               
+                               
                                System.out.println(e[1].fname);
                                System.out.println(e[1].lname);
                                System.out.println(e[1].id);
+                               
+                               System.out.println(">>>>>>>>>>>>>>>>>>>>");
                                
                                System.out.println(e[2].fname);
                                System.out.println(e[2].lname);
