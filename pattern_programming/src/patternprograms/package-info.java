@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author Nilesh
- *
- */
-package patternprograms;
