@@ -1,9 +1,9 @@
-package pattern_programming.pattern.basic.programs;
+package ajinkya_phadke;
 
-public class Pattern7 {
+public class pattern5 {
 
 	public static void main(String[] args) {
-		int r =30;
+		int r =15;
 		
 		for(int i = 1 ; i <= r ; i++) {
 			
@@ -13,14 +13,14 @@ public class Pattern7 {
 			System.out.println();
 		}
 		
-	int w = r -1;
+		int w = r -1;
 		for(int i = 1; i <= w ; i++) {
-		
+			
 			for(int j = w ; j >= i ; j--) {
-			System.out.print("* ");
+				System.out.print("* ");
+			}
+			
+			System.out.println();
 		}
-		
-		System.out.println();
-	}
 	}
 }
