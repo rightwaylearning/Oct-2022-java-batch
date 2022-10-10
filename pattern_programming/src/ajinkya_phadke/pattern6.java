@@ -1,6 +1,6 @@
-package pattern_programming.pattern.basic.programs;
+package ajinkya_phadke;
 
-public class Pattern8 {
+public class pattern6 {
 
 	public static void main(String[] args) {
 		int n = 5;
