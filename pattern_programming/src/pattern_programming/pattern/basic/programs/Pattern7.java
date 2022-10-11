@@ -3,7 +3,7 @@ package pattern_programming.pattern.basic.programs;
 public class Pattern7 {
 
 	public static void main(String[] args) {
-		int r =15;
+		int r =30;
 		
 		for(int i = 1 ; i <= r ; i++) {
 			
@@ -13,14 +13,14 @@ public class Pattern7 {
 			System.out.println();
 		}
 		
-		int w = r -1;
+	int w = r -1;
 		for(int i = 1; i <= w ; i++) {
-			
+		
 			for(int j = w ; j >= i ; j--) {
-				System.out.print("* ");
-			}
-			
-			System.out.println();
+			System.out.print("* ");
 		}
+		
+		System.out.println();
+	}
 	}
 }
