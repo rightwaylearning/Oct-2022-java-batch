@@ -12,5 +12,6 @@ public class RulesToCreateIdentifiers {
 		int $_____$=50;
 		String first_Name = "sdjfht83756834bMNCbzk";
 		int Nam1e = 20;
+		
 	}
 }

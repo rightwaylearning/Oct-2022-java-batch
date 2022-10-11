@@ -1,22 +1,22 @@
 package pattern_programming.pattern.basic.programs;
 
-import java.io.File;
-
 public class Pattern4 {
 
 	public static void main(String[] args) {
-		
-		
-		for(int r =1; r<=5; r++) {
+
+		for (int r = 1; r <= 5; r++) {
 			char ch = 'A';
-			
-			for(int c = 1; c<=r; c++) {
+
+			for (int c = 1; c <= r; c++) {
 				System.out.print(ch + " ");
 				ch++;
 			}
 			System.out.println();
-					
+
 		}
+<<<<<<< HEAD
+
+=======
 		
 		try {
 		int m = 10/0;
@@ -24,6 +24,7 @@ public class Pattern4 {
 		catch(Exception e) {
 			System.out.println(e);
 		}
+>>>>>>> 02d904202502c777b00a7941a35fba0ed9016db9
 	}
 }
 
