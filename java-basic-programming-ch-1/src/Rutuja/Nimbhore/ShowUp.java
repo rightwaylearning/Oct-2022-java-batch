@@ -1,7 +1,5 @@
 package Rutuja.Nimbhore;
 
-import rwl_array_programs.Student;
-
 public class ShowUp {
 	
 	void printData(Student1 s) {

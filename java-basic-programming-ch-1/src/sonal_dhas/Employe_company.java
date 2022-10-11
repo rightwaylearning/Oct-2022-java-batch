@@ -18,7 +18,7 @@ public class Employe_company {
 	     c.fname = "Sonal";
 	     c.lname = "Dhas";
 	     c.age = 42;
-	     c.contact = 847363268;
+	     c.contact = 8473632685L;
 	     
 	     e[0] = c;
 	      
@@ -26,7 +26,7 @@ public class Employe_company {
 	       d.fname = "Vishwa";
 	       d.lname = " Rajput";
 	       d.age  = 68;
-	       d.contact = 636865457;
+	       d.contact = 6368654574L;
 	       
 	       
 	      e[1] = d;
@@ -35,7 +35,7 @@ public class Employe_company {
 	       h.fname = "Arti";
 	       h.lname = " Dhas";
 	       h.age  = 23;
-	       h.contact = 636865457;
+	       h.contact = 63686545741323L;
 	       
 	       e[2] = h;
 	       
