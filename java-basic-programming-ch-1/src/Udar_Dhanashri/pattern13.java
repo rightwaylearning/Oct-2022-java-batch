@@ -1,8 +1,7 @@
-package pattern_programming.pattern.basic.programs;
+package Udar_Dhanashri;
 
-public class Pattern13 {
-
-	  public static void main(String[] args) {
+public class pattern13 {
+	 public static void main(String[] args) {
 		  int n = 10;
 			
 			for(int r = 1; r <=n ; r++) {
@@ -21,7 +20,7 @@ public class Pattern13 {
 					break;
 				}
 			}
-		//	int n1 = 9;
+		//	int  n1 = 9;
 			for(int r = n; r >= 1 ; r--) {
 				
 				for(int s = 1 ; s <= n-r; s++) {
@@ -38,4 +37,6 @@ public class Pattern13 {
 	}
 	
 }
+
+
 
