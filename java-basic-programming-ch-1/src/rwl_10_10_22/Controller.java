@@ -13,6 +13,7 @@ public class Controller {
 		s2.rollNumber = 24;
 		s2.name = "B";
 		System.out.println(Student.schoolName);// SKDV
+		System.out.println(s2.rollNumber);
 		
 		
 	}
