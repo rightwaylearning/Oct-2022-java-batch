@@ -1,0 +1,19 @@
+package rwl_10_10_22;
+
+public class Controller {
+
+	public static void main(String[] args) {
+		
+		Student s = new Student();
+		s.rollNumber = 23;
+		s.name = "A";
+		Student.schoolName = "SKDV";
+		
+		Student s2 = new Student();
+		s2.rollNumber = 24;
+		s2.name = "B";
+		System.out.println(Student.schoolName);// SKDV
+		
+		
+	}
+}
