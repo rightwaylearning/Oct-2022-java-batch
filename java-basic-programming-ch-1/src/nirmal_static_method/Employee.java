@@ -28,16 +28,25 @@ public class Employee {
 
 		m();
 		m1();
+		Employee.n();           
+//		we can write static method in instance method
+		Employee.m1();
 	}
 
 	static void n2() {
 		System.out.println(companyname);
 		n();
 		m1();
+		
+//		in this static method we can write only static method
+		
+//		we can access instance method in static method by creating object 
 
 		Employee e = new Employee();
 		System.out.println(e.firstname);
 		System.out.println(e.lastname);
 		System.out.println(e.id);
+		e.m2();
+		e.m();
 	}
 }
