@@ -1,11 +1,8 @@
 package omkar_pawar;
 
-<<<<<<< HEAD
-public class pattern7{ 
-	   
-=======
 public class pattern7 {
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		int r =5;
 		for(int i =1 ; i <= r ; i++) {
 			
@@ -24,5 +21,4 @@ public class pattern7 {
 		}
 		
 	}   
->>>>>>> 420823acf3f49db75b14f62556c1ebbc6eb8dac3
 }
