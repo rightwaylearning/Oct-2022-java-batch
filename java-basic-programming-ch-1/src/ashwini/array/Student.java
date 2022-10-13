@@ -1,9 +1,10 @@
-package rwl_array_programs;
+package ashwini.array;
 
 public class Student {
-
+	
 	String name;
 	int rollNumber;
 	Marks[] mks;
-	String Subject;
+	
+
 }
