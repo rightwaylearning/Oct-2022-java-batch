@@ -5,12 +5,13 @@ public class pattern10 {
 		int n =5;
 		for(int i =1;i<=n;i++) {
 			for(int j=1;j<=i;j++) {
-				System.out.print(" * ");
+				System.out.print("* ");
 			}
-			for(int s=1;s<=(n*2-r*2);s++)
+			for(int s=1;s<=(n*2-i*2);s++)
 				
-			System.out.print(" " );
+			System.out.print("  " );
 		}
+		System.out.println();
 	}
 
 }
