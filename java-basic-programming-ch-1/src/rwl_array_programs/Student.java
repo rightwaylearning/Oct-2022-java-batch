@@ -5,4 +5,5 @@ public class Student {
 	String name;
 	int rollNumber;
 	Marks[] mks;
+	String Subject;
 }
