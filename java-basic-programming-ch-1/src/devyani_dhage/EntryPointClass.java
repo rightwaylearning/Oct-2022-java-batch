@@ -1,7 +1,7 @@
-package rwl_13_10_2022;
+package devyani_dhage;
 
 public class EntryPointClass {
-
+	
 	public static void main(String[] args) {
 		
 		Student s = new Student(11,"Yusuf","MDIOE");
@@ -12,15 +12,6 @@ public class EntryPointClass {
 		
 		
 	}
-
-
-
-
-
-
-
-
-
 
 
 }
