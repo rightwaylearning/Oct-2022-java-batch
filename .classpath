@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="archana_khaire.info/src"/>
+	<classpathentry kind="src" path="archana_khaire.info1/src"/>
+	<classpathentry kind="src" path="assignment/src"/>
+	<classpathentry kind="src" path="Basic_pattern_prgrams/src"/>
+	<classpathentry kind="src" path="devashish_shripad/new_proje/src"/>
+	<classpathentry kind="src" path="employee_info/assignment/src"/>
+	<classpathentry kind="src" path="employee_info/src"/>
+	<classpathentry kind="src" path="first_java/src"/>
+	<classpathentry kind="src" path="first_project/src"/>
+	<classpathentry kind="src" path="Hallo/src"/>
+	<classpathentry kind="src" path="Hello/src"/>
+	<classpathentry kind="src" path="identifer_java_pro/src"/>
+	<classpathentry kind="src" path="java-basic-programming-ch-1/src"/>
+	<classpathentry kind="src" path="java/src"/>
+	<classpathentry kind="src" path="message/src"/>
+	<classpathentry kind="src" path="my project/src"/>
+	<classpathentry kind="src" path="nikita_tonde/src"/>
+	<classpathentry kind="src" path="omkar_pacharne/src"/>
+	<classpathentry kind="src" path="operators_assignments/src"/>
+	<classpathentry kind="src" path="pattern_programming/src"/>
+	<classpathentry kind="src" path="Proj_Sarthak_Nalage/src"/>
+	<classpathentry kind="src" path="Rutuja_Kauthale"/>
+	<classpathentry kind="src" path="Rutuja_Nimbhore/src"/>
+	<classpathentry kind="src" path="shabaz_patel/src"/>
+	<classpathentry kind="src" path="student_details/src"/>
+	<classpathentry kind="src" path="vaibhav_patil/src"/>
+	<classpathentry kind="src" path="vaishnavi_shitole/src"/>
+	<classpathentry kind="src" path="varsha_tavhare_javaproject/src"/>
+	<classpathentry kind="src" path="Vinayak_Landge_Java/src"/>
+	<classpathentry kind="src" path="yogesh_kawade/src"/>
+	<classpathentry kind="output" path="Hello/bin"/>
+</classpath>
