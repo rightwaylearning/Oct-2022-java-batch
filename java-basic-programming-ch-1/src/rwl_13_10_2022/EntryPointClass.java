@@ -9,5 +9,6 @@ public class EntryPointClass {
 		Student s1 = new Student();
 		
 		
+		
 	}
 }
