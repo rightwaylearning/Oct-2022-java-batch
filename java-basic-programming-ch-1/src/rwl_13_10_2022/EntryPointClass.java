@@ -7,8 +7,21 @@ public class EntryPointClass {
 		Student s = new Student(11,"Yusuf","MDIOE");
 		
 		Student s1 = new Student();
+
+		
 		
 		
 		
 	}
+
+
+
+
+
+
+
+
+
+
+
 }
