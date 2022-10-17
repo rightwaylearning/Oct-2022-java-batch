@@ -26,24 +26,23 @@ public class Controller1 {
 		    
 		    
 		                // System.out.println(p.name);
-		               //  System.out.println(p.jercyNo);
-		                 
+		                // System.out.println(p.jercyNo);
 		                // System.out.println(play[0].played);
 		                 //System.out.println(play[0].score);
 		                 
-		                // System.out.println(play[1].played);
+		                 //System.out.println(play[1].played);
 		                // System.out.println(play[1].score);
 		                 
 		                 
 		                 
-		   // for(int i = 0; i< p.mts.length; i++) {
-		    	
-		    //	System.out.println(p.mts[i].played);
-		    	// System.out.println(p.mts[i].score);
+		 // for(int i = 0; i< p.mts.length; i++) {
+			    
+		    	//System.out.println(p.mts[i].played);
+		    	//System.out.println(p.mts[i].score);
 		                  
-		                  ShowUp show = new ShowUp();
-		    		         show.PrintData(p);
-		    		
+		                ShowUp show = new ShowUp();
+		    		        show.PrintData(p);
+		    		//
 		    
 		       //}	
 		
