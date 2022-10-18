@@ -7,6 +7,7 @@ public class controller {
 		Scanner sc=new Scanner(System.in);
 		short size=sc.nextShort();
 		StudentInfo[]s=new StudentInfo[size];
+	//	StudentInfo s1=new StudentInfo();
 		Address []ad=new Address[size];
 		for(byte i=0;i<size;i++) {
 			ad[i]=new Address();
@@ -22,12 +23,13 @@ public class controller {
 //			System.out.println("Enter the details of student Name and its roll_number");
 //			s[i].name=sc.next();s[i].r_n=sc.nextShort();
 //		}
+	//	s1.adr=ad;
 		for(byte i=0;i<size;i++) {
-			s[i].adr=ad;
+			s[i].adr=ad[i];
 		}
 		for(byte i=0;i<size;i++) {
 			System.out.println("Printing Stduent "+(i+1)+" details");
-			System.out.println(s[i].name+" "+s[i].r_n+" "+s[i].adr[i].landmark+" "+s[i].adr[i].pin);
+			System.out.println(s[i].name+" "+s[i].r_n+" "+s[i].adr.landmark+" "+s[i].adr.pin);
 		}
 		
 		
