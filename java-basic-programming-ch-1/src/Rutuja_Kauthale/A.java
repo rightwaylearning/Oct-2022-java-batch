@@ -1,7 +1,4 @@
 hello rutuja
-
-
-
-I am here.
+Hi RIGHT way learning student
 
 hi
