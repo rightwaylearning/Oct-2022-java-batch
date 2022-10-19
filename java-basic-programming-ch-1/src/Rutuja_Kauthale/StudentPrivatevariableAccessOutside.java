@@ -53,7 +53,7 @@ class StudentController{
 		System.out.println(n1);
 		int a= s.getRollno();
 		System.out.println(a);
-		s.setName("Athrav");
+		s.setName("Atharv");
 		String b= s.getName();
 		System.out.println(b);
 		
