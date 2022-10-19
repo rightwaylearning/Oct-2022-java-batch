@@ -14,10 +14,7 @@ public class Controler {
 		e.id = 65;
 		e.m2();
 		e.m();
-		
-		
-		
-		
+	
 	}
 
 }
