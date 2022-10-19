@@ -49,7 +49,7 @@ class StudentController{
 		StudentPrivatevariableAccessOutside s =new StudentPrivatevariableAccessOutside(12,"Rutuja","4th");
 		String n= s.getName();
 		System.out.println(n);
-		System.out.println("get std");
+		
 		String n1= s.getStd();
 		System.out.println(n1);
 		int a= s.getRollno();
