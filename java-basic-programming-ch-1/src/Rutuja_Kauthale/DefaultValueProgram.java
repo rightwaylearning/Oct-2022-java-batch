@@ -19,7 +19,8 @@ public class DefaultValueProgram {
 	static boolean bo1;
 	String st;
 	static String st1;
-	A a;
+	 A a;
+	 static A a1;
 	int[] arr;
 	static int[] arr1;
 	String[] str;
@@ -60,7 +61,7 @@ public static void main(String[] args) {
 	System.out.println("Defalut value of static boolean = "+DefaultValueProgram.bo1);
 	System.out.println("***************************************************************");
 	System.out.println("Defalut value of static string = "+DefaultValueProgram.st1);
-	System.out.println("Defalut value of object = "+defaultValueProgram.a);
+	System.out.println("Defalut value of object = "+DefaultValueProgram.a1);
 	System.out.println("Defalut value of static array = "+DefaultValueProgram.arr1);
 	System.out.println("Defalut value of static string = "+DefaultValueProgram.str1);
 	
