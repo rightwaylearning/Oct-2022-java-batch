@@ -9,18 +9,18 @@ public class D {
 	D(){}
 	
 	D(int x , int y){
-		a = x;
-		b = y;
+		this.a = x;
+		this.b = y;
 	}
-	 
-	void m1(int c , int d) {
-		a = c;
-		b = d;
-	}
-	
-		void m2(int c) {
-			a = c;
-		}
+//	 
+//	void m1(int c , int d) {
+//		a = c;
+//		b = d;
+//	}
+//	
+//		void m2(int c) {
+//			a = c;
+//		}
 		
 	}
 	
