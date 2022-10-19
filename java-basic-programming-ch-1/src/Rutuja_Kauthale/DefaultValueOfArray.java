@@ -10,13 +10,17 @@ class DefaultValueOfArray{
 	void M1()
 	{
 		long arr_long[]=new long[10];
-		System.out.println("Default value of long array = "+arr_long);
+
+		for(int i=0;i< arr_long.length;i++)
+		{
+			System.out.println("Default value of long array of position = "+i+" is "+arr_long[i]);
+		}
 	}
 	
 	
 }
 
-class Controller{
+class ControllerOfDefaultValueOfArray{
 	
 	public static void main(String[] args) {
 		DefaultValueOfArray defaultValueOfArray =new DefaultValueOfArray();
