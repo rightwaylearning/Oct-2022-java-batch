@@ -4,4 +4,5 @@ public class StudentInfo {
 String name;
 short r_n;
 Address adr;
+Marks mrk[];
 }

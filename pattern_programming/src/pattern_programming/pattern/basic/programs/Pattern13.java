@@ -15,7 +15,7 @@ public class Pattern13 {
 					System.out.print("* ");
 				}
 				
-				
+				 
 				System.out.println();
 				if(r == n-1) {
 					break;
