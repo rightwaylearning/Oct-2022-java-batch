@@ -19,15 +19,15 @@ public class DefaultValueProgram {
 	static boolean bo1;
 	String st;
 	static String st1;
-	 A a;
-	 static A a1;
+	ControllerOfDefaultValueProgram a;
+	 static ControllerOfDefaultValueProgram a1;
 	int[] arr;
 	static int[] arr1;
 	String[] str;
 	static String[] str1;
 	
 }
-class A{
+class ControllerOfDefaultValueProgram{
 public static void main(String[] args) {
 	DefaultValueProgram defaultValueProgram =new DefaultValueProgram();
 	System.out.println("Defalut value of byte = "+defaultValueProgram.b);
