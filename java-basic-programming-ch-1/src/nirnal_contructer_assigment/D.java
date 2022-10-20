@@ -12,15 +12,15 @@ public class D {
 		this.a = x;
 		this.b = y;
 	}
-//	 
-//	void m1(int c , int d) {
-//		a = c;
-//		b = d;
-//	}
-//	
-//		void m2(int c) {
-//			a = c;
-//		}
+	 
+	void m1(int c , int d) {
+	   a = c;
+	   b = d;
+	}
+	
+		void m2(int c) {
+			a = c;
+		}
 		
 	}
 	
