@@ -1,5 +1,6 @@
 package sarthak_nalage.array_obj;
-import java.util.*;
+
+import java.util.Scanner;
 
 public class controller {
 	public static void main(String[] args) {
@@ -16,18 +17,24 @@ public class controller {
 			s[i]=new StudentInfo();
 			System.out.println("Enter the details of student Name and its roll_number "+(i+1));
 			s[i].name=sc.next();s[i].r_n=sc.nextShort();
+			s[i].adr=ad[i];
+			Marks []mk=new Marks[3];
+			for(byte j=0;j<3;j++) {
+				System.out.println("Enter the marks of sub "+(j+1));
+				short sub=sc.nextShort();
+				mk[j]=new Marks(sub);
+				
+			}
+			s[i].mrk=mk;
 		}
-//		for(byte i=0;i<size;i++) {
-//			s[i]=new StudentInfo();
-//			System.out.println("Enter the details of student Name and its roll_number");
-//			s[i].name=sc.next();s[i].r_n=sc.nextShort();
-//		}
-		for(byte i=0;i<size;i++) {
-			s[i].adr=ad;
-		}
-		for(byte i=0;i<size;i++) {
+		//Printing details stored
+			for(byte i=0;i<size;i++) {
 			System.out.println("Printing Stduent "+(i+1)+" details");
-			System.out.println(s[i].name+" "+s[i].r_n+" "+s[i].adr[i].landmark+" "+s[i].adr[i].pin);
+			System.out.println(s[i].name+" "+s[i].r_n+" "+s[i].adr.landmark+" "+s[i].adr.pin);
+			for(int j=0;j<3;j++) {
+				System.out.println(s[i].mrk[j].sub);
+			System.out.println(" ######### ");
+			}
 		}
 		
 		
