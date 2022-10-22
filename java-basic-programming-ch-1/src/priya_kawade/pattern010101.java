@@ -8,14 +8,14 @@ public class pattern010101 {
 			      // 6<=5
 			for(int j=1;j<=i;j++) {
 				       //1<=5                           //*--------*
-				System.out.print("* ");                 //**------**
+				System.out.print("*");                 //**------**
 			}                                           //***----***
 			for(int s=1;s<=(n*2-i*2);s++) {	            //****--****
 				        //1<=0                         // **********
 				System.out.print(" ");
 			}
 			for(int j=1;j<=i;j++) {
-				System.out.print("* ");
+				System.out.print("*");
 			}
 		
 		
@@ -34,13 +34,13 @@ public class pattern010101 {
 		//======2nd program=======
 for(int i=n;i>=1;i--) {
 	for(int j=1;j<=i;j++) {
-		System.out.print("* ");
+		System.out.print("*");
 	}
 	for(int s=1;s<=(n*2-i*2);s++) {
 		System.out.print(" ");
 	}
 	for(int j=1;j<=i;j++) {
-		System.out.print("* ");
+		System.out.print("*");
 	}
 
 
