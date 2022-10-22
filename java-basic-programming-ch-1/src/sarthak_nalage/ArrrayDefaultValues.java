@@ -19,12 +19,12 @@ class DefaultValue {
 	}
 
 	void operation() {
-		System.out.println(ar); // 
-		System.out.println(ar1);// 
-		System.out.println(ar2);// 
-//		System.out.println(ar[1]);//0 
-//		System.out.println(ar1[1]);// null
-//		System.out.println(ar2[2]);// false
+//		System.out.println(ar);  
+//		System.out.println(ar1); 
+//		System.out.println(ar2); 
+		System.out.println(ar[1]);//0 
+		System.out.println(ar1[1]);// null
+		System.out.println(ar2[2]);// false
 
 	}
 }
