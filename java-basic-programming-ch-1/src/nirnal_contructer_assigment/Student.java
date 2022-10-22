@@ -13,9 +13,9 @@ public class Student {
 	}
 	
 	Student(String f , String l , int r ){
-		fname = f;
-		lname = l;
-		 RollName = r;
+		this.fname = f;
+		this.lname = l;
+		this.RollName = r;
 	 
 	}
 	
