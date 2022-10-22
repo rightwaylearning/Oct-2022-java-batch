@@ -1,6 +1,6 @@
 package sarthak_nalage.array_obj;
-import java.lang.invoke.MethodHandles.Lookup.ClassOption;
-import java.util.*;
+
+import java.util.Scanner;
 
 public class controller {
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class controller {
 			s[i].name=sc.next();s[i].r_n=sc.nextShort();
 			s[i].adr=ad[i];
 			Marks []mk=new Marks[3];
-			for(int j=0;j<3;j++) {
+			for(byte j=0;j<3;j++) {
 				System.out.println("Enter the marks of sub "+(j+1));
 				short sub=sc.nextShort();
 				mk[j]=new Marks(sub);
@@ -27,9 +27,8 @@ public class controller {
 			}
 			s[i].mrk=mk;
 		}
-
-		
-		for(byte i=0;i<size;i++) {
+		//Printing details stored
+			for(byte i=0;i<size;i++) {
 			System.out.println("Printing Stduent "+(i+1)+" details");
 			System.out.println(s[i].name+" "+s[i].r_n+" "+s[i].adr.landmark+" "+s[i].adr.pin);
 			for(int j=0;j<3;j++) {
