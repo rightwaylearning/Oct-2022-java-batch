@@ -11,22 +11,24 @@ public class D {
 	D(int c, int d) {
 		this.a = c;
 		this.b = d;
+		
 	}
 
-	int geta() {
+	public int getA() {
 		return a;
 	}
 
-	void seta(int a) {
+	public void setA(int a) {
 		this.a = a;
 	}
 
-	int getb() {
+	public int getB() {
 		return b;
 	}
 
-	void setb(int b) {
+	public void setB(int b) {
 		this.b = b;
 	}
-
 }
+
+
