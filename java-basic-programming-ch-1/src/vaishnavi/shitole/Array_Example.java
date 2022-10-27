@@ -9,7 +9,7 @@ public class Array_Example {
 	   s.div='A';
 	   s.rollNo=04;
 	   
-	   						Marks[] m = new Marks[3];
+	   						Marks[] m = new Marks[5];
 	   						Marks n1 = new Marks();
 	   					
 	   						n1.subject="Maths";
