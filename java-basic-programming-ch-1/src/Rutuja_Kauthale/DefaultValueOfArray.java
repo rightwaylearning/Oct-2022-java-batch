@@ -7,6 +7,12 @@ class DefaultValueOfArray{
 	double arr_double[];
 	static char arr_char[];
 	
+	
+	
+	DefaultValueOfArray()
+	{
+		System.out.println(arr_int);
+	}
 	void M1()
 	{
 		long arr_long[]=new long[10];
@@ -30,6 +36,7 @@ class ControllerOfDefaultValueOfArray{
 		{
 			System.out.println("Default value of interger array of position = "+i+" is "+defaultValueOfArray.arr_int[i]);
 		}
+		System.out.println("Default value of interger array of position = "+" is "+defaultValueOfArray.arr_int[0]);
 		
 		
 		defaultValueOfArray.arr_str=new String[5];
