@@ -52,6 +52,9 @@ public class Employeeofcompany {
                                System.out.println(e[2].fname);
                                System.out.println(e[2].lname);
                                System.out.println(e[2].id);
+                               
+                               
+                               
 	}
 
 }
