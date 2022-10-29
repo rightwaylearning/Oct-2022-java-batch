@@ -4,9 +4,9 @@ public class Increment_decrement_program {
 
 	public static void main(String[] args) {
 
-		int z = 10;
+		byte z = 10;
 		z++;
-		int y = z;
+		byte y = z;
 		System.out.println(y);
 
 		int s = 50;

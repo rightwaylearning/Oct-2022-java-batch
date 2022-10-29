@@ -11,5 +11,10 @@ public class TypeCasting {
 		char c='a';
 		int i2=c;
 		System.out.println(i2);
+		long l1=2343456562323L;
+		float f2=l1;
+		System.out.println(f2);
+		long l2=(long)f2;
+		System.out.println(l2);
 	}
 }
