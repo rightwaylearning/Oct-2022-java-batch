@@ -10,13 +10,15 @@ public class pattern6 {
 		System.out.println("");
 	  }
 		
-char ch='*';
+char ch='A';
    for(int s=5;s>=1;s--) {
 	   for(int p=1;p<=s;s++) {
 		   System.out.print(ch+" ");
+		  
 	   }
 	   System.out.println();
 	   ch++;
+	   
    }
 	}
 }
