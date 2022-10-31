@@ -65,5 +65,6 @@ public static void main(String[] args) {
 	System.out.println("Defalut value of static array = "+DefaultValueProgram.arr1);
 	System.out.println("Defalut value of static string = "+DefaultValueProgram.str1);
 	
+	
 	}
 }
