@@ -6,17 +6,23 @@ public class econtroller {
 		
 		
 		Employee e = new Employee();
+		
+		 
+		 
+		 
+		 
 		e.setFirstname("Nirmal");
 		e.setLastname("Rajput");
 		e.setId(45);
+		 //String s = e.getFirstname();
+		// String f = e.getLastname();
+		// int c = e.getId();
 		
-		 String s = e.getFirstname();
-		 String f = e.getLastname();
-		 int c = e.getId();
+		 
 		
-		 System.out.println(s);
-		 System.out.println(f);
-		 System.out.println(c);
+		 System.out.println(e.getFirstname());
+		 System.out.println(e.getLastname());
+		System.out.println(e.getId());
          
 	}
 
