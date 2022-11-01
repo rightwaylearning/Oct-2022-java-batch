@@ -24,7 +24,7 @@ public class unioncontroller {
 		Union_bank_project.address = "at post abc ";
 		System.out.println(Union_bank_project.address);
 		
-		System.out.println("---------------------------");
+		System.out.println("---------------------------"); 
 
 		String m = u.getBankClientName();
 		long n = u.getBankClientAccNumber();
