@@ -14,7 +14,7 @@ public class Pattern7 {
 		}
 		
 	int w = r -1;
-		for(int i = 1; i <= w ; i++) {
+		for(int i = 1; i <= w ; i++) { 
 		
 			for(int j = w ; j >= i ; j--) {
 			System.out.print("* ");
