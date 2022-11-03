@@ -26,6 +26,8 @@ import sarthak_nalage.subPack1.Test;
 		c1.c1("Sarthak");// Hello Sarthak
 		Controller c2 = new Controller();
 		c2.c2("Sarthak");// welcome Sarthak
+		System.out.println("Calling static method of Controller from subPack1");
+		sarthak_nalage.subPack1.Controller.main(null);
 
 	}
 }
