@@ -11,7 +11,7 @@ public class StudentInfo {
 		stud[2] = new Student("prashant", "rajput", 14, 'c');
 		stud[3] = new Student("indra", "rajput", 15, 'd');
 		stud[4] = new Student("vishva", "rajput", 16, 'e');
-
+		
 		return stud;
 
 	}
