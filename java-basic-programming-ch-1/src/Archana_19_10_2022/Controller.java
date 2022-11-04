@@ -2,6 +2,7 @@ package Archana_19_10_2022;
 
 
 public class Controller {
+	
 	public static void main(String[] args) {
 		
 		ArrayDefaultValue a = new ArrayDefaultValue();
@@ -15,14 +16,14 @@ public class Controller {
 		a.arr3 = new double[5];
 		System.out.println(a.arr3[0]);//0.0
 		
-		ArrayDefaultValue arr4 = new char[];
+		ArrayDefaultValue arr4 = new char[5];
 		ArrayDefaultValue arr5 = new Student[5];
 		
 		
 		
 		
 		System.out.println(ArrayDefaultValue.arr4[0]);
-		System.out.println(ArrayDefaultValue.arr5[0];
+		System.out.println(ArrayDefaultValue.arr5[0]);
 		a.m1();
 				
 		
