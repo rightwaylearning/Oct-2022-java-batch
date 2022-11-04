@@ -8,11 +8,17 @@ public class Increment_decrement_program {
 		z++;
 		byte y = z;
 		System.out.println(y);
+		System.out.println(z);
+	
+		System.out.println("-------------------------------");
 
 		int s = 50;
-		++s;
+		s++;
 		int q = s;
 		System.out.println(q);
+		System.out.println(s);
+		
+		System.out.println("-------------------------------");
 
 		int a = 10;
 		int b = 20;
@@ -22,6 +28,11 @@ public class Increment_decrement_program {
 		System.out.println(c);
 		System.out.println(d);
 
+		
+		System.out.println("-------------------------------");
+		
+		
+		
 		int l = 50;
 		byte m = 100;
 
@@ -32,6 +43,8 @@ public class Increment_decrement_program {
 		System.out.println(n);
 		System.out.println(o);
 
+		System.out.println("-------------------------------");
+		
 		int x = 500;
 		int g = 400;
 		int r = --x - g++;
