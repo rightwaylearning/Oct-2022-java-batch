@@ -19,5 +19,10 @@ public class Controller {
 		B b= new B();
 		b.m2();
 		
+		pack2.A a1 = new pack2.A();
+		a1.m6();
+		
+		
+				
 	}
 }
