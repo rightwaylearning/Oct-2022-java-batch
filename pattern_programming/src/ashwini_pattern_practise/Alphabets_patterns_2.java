@@ -15,6 +15,9 @@ public class Alphabets_patterns_2 {
 			//ch++;
 		}
 		
+		
+		//sysout
+		
 	}
 
 }
@@ -28,5 +31,5 @@ public class Alphabets_patterns_2 {
 
 //i=1          j=1       A
 //i=2          j=1,2     AB
-//i=3          J=1,2,3   AB
+//i=3          J=1,2,3   ABc
 
