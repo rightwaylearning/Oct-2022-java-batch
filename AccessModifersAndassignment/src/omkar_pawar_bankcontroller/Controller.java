@@ -1,7 +1,7 @@
-package omkar_bankcontroller;
+package omkar_pawar_bankcontroller;
 
-import omkar_bank.Bank;
-import omkar_bank.BankInfo;
+import omkar_pawar_bank.Bank;
+import omkar_pawar_bank.BankInfo;
 
 public class Controller {
 	
