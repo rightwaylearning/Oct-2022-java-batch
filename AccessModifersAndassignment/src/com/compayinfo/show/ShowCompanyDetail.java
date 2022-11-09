@@ -20,10 +20,7 @@ public class ShowCompanyDetail {
 			 
 			 System.out.println("----------------------------------");
 		
-		 }
-		 
-		 
-		
+		 }	
 
 	}
 
