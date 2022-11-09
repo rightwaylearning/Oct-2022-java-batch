@@ -1,6 +1,6 @@
 package vinay;
 
-import vin.hi;
+import vin.*;
 
 public class hello {
 	
@@ -16,7 +16,7 @@ public class hello {
 		hello he = new hello();
 		he.m1();
 		
-		hi h = new hi();
-		h.m2();
+		//hi h = new hi();
+		hi.m2();
 	}
 }
