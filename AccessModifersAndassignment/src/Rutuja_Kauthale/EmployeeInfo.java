@@ -5,7 +5,7 @@ public class EmployeeInfo {
 	
 	public static void main(String[] args) {
 		
-		Employee emp1=new Employee();
+		Employee emp1= new Employee();
 		
 		Employee[] emp=new Employee[4];
 		emp= emp1.getEmployeeInfo();
