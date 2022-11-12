@@ -1,6 +1,8 @@
 package com.skdv.www;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 
 public class Student {
@@ -10,6 +12,8 @@ public class Student {
 	List<Integer> marks;
 	List<Address> adr;
 	Set set;
+	Map<Integer, String> map;
+	Properties p;
 	
 	public String getStudentName() {
 		return studentName;
@@ -44,10 +48,26 @@ public class Student {
 		this.set = set;
 	}
 	
+	
+	public Map<Integer,String> getMap(){
+		return this.map;
+	}
+	
+	
+	
+	public Properties getP() {
+		return p;
+	}
+	public void setP(Properties p) {
+		this.p = p;
+	}
+	public void setMap(Map<Integer, String> map) {
+		this.map = map;
+	}
 	@Override
 	public String toString() {
 		return "Student [studentName=" + studentName + ", rollNumber=" + rollNumber + ", marks=" + marks + ", adr="
-				+ adr + ", set=" + set + "]";
+				+ adr + ", set=" + set + ", map=" + map + ", properties=" + p + "]";
 	}
 	
 	
