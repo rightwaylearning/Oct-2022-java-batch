@@ -1,6 +1,6 @@
 package Archana_15_10_2022;
 
-import rwl_15_10_22_thisdemo.examples.A;
+
 
 public class this_demo {
 public static void main(String[] args) {
@@ -20,6 +20,6 @@ public static void main(String[] args) {
 	 obj2.b = 200;
 	 obj2.x =300;
 	 
-	 obj2.m1(11, 12, obj2)
+	 obj2.m1(11, 12, obj2);
 }
 }

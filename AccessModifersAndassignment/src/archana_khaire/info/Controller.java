@@ -22,7 +22,7 @@ public class Controller {
 		                 
 		 s.mks=sub;
 		 ShowUp show = new ShowUp();
-		 show.PrintData(s);
+		 show.printData(s);
 		                 
 		                 
 		
