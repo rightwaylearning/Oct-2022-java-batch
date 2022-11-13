@@ -37,7 +37,7 @@ public class SMcontrollr {
 	Marray[1]=m2;
 	
 	x.mks=Marray;
-		
+	
 		System.out.println(x.name);
 		System.out.println(x.rollNumber);
 		System.out.println(y.name);
@@ -50,8 +50,9 @@ public class SMcontrollr {
 			System.out.println(x.mks[i].subName);
 			System.out.println(x.mks[i].score);
 			System.out.println("_________");
-			for(int j=0;j<Sarray.length;j++){
-				System.out.println(Sarray[j]);
+			
+			
+			
 			}
 		}
 		
@@ -62,4 +63,4 @@ public class SMcontrollr {
 	
 	
 	
-}
+

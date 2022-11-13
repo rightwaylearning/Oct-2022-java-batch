@@ -18,7 +18,7 @@ public class Controller {
 		c.m3();
 		System.out.println("--------------------------");
 		
-		// case 3]
+//		// case 3]
 		
 		Parent p1=new Child();
 		p1.m1(); // child
@@ -26,7 +26,7 @@ public class Controller {
 	//	p1.m3(); 
 		
 		// case 4]
-		
-		//Child c1= new Parent();
+	
+//		//Child c1= new Parent();
 	}
 }
