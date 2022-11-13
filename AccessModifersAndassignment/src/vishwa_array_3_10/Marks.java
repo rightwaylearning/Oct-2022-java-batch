@@ -4,4 +4,16 @@ public class Marks {
 String subName;
 int score;
 
+
+
 }
+
+
+
+	
+	
+
+
+
+
+
