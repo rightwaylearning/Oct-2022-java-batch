@@ -38,7 +38,19 @@
               <ref bean="a1"></ref>
            </set>
         </property>
-      
+       <property name="map">
+           <map>
+           <entry key="123" value="A"></entry>
+           <entry key="124"  value="B"></entry>
+          <!--   <entry key-ref="ann" value-ref=""/> -->
+           </map>
+       </property>
+       <property name="p">
+          <props>
+            <prop key="url">http://localhost:3306/db/admin</prop>
+            <prop key="user_name">sachin</prop>
+          </props>
+       </property>
       </bean>
       
       <bean id="a1" class="com.skdv.www.Address">
