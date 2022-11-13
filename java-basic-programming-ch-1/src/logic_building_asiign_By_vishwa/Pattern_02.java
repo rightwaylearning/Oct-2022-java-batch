@@ -15,7 +15,7 @@ public class Pattern_02 {
 		}
 
         char ch ='A';
-		for (int c = 5; c >= 1; c--) {
+		for (int c = 5; c >= 1; c++) {
 
 			for (int d = 1; d <= c; d++) {
 				System.out.print(ch+" ");
