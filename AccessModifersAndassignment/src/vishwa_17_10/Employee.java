@@ -33,11 +33,11 @@ public class Employee {
     	Employee.s1();                           
  
     
-    	//Employee e= new Employee();
-    	System.out.println(empId);
-    	System.out.println(name);
-    	System.out.println(cellPhone);
-    	m1();
+    	Employee e= new Employee();
+    	System.out.println(e.empId);
+    	System.out.println(e.name);
+    	System.out.println(e.cellPhone);
+    	e.m1();
     }
 }
 

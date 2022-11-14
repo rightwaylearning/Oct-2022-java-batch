@@ -4,27 +4,29 @@ public class controller {
 
 	public static void main(String[] args) {
 
-		D d = new D(100, 200);
-		int obj1 = d.geta();
-		System.out.println(obj1);
-
-		int obj2 = d.getb();
-		System.out.println(obj2);
-
-		D d2 = new D(500, 700);
-		int y = d2.geta();
-		int z = d2.getb();
+		D d = new D(100,200);
+		int c = d.getA();
+		int x = d.getB();
+		d.setA(10);
+		int bb = d.getA();
+		System.out.println(c);
+		System.out.println(x);
+		System.out.println(bb);
+		
+		D d1 = new D(500, 700);
+		int y = d1.getA();
+		int z = d1.getB();
 
 		System.out.println(y);
 		System.out.println(z);
 
-		D d1 = new D();
-		d1.seta(500);
-		d1.setb(600);
+		D d2 = new D();
+		d2.setA(500);
+		d2.setB(600);
 
-		int a = d1.geta();
+		int a = d2.getA();
 		System.out.println(a);
-		int b = d1.getb();
+		int b = d2.getB();
 		System.out.println(b);
 
 	}
