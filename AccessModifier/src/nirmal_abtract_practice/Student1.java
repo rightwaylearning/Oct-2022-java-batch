@@ -1,3 +1,4 @@
+
 package nirmal_abtract_practice;
 
 abstract class Student1 {
