@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+  
+  
+  <bean id="employee" class="com.tcs.www.beans.classes.Employee" autowire="constructor">
+      <constructor-arg name="employeeId" value="100"></constructor-arg>
+      <constructor-arg name="employeeName" value="json roy"></constructor-arg>
+      <constructor-arg name="employeeDepartment" value="A-23"></constructor-arg>
+  </bean>
+  
+  
+   <bean id="project" class="com.tcs.www.beans.classes.Project">
+        <property name="serialNumber" value="1888234"></property>
+	    <property name="projectName" value="centria health care....."></property>
+	    <property name="clientName" value="USA facebook team"></property>
+	    <property name="teamSize" value="23"></property>
+   </bean>
+   
+  <!--  <bean id="project12399999" class="com.tcs.www.beans.classes.Project">
+        <property name="serialNumber" value="1888234"></property>
+	    <property name="projectName" value="centria health care"></property>
+	    <property name="clientName" value="USA facebook team"></property>
+	    <property name="teamSize" value="23"></property>
+   </bean>
+   -->
+  
+  
+  </beans>

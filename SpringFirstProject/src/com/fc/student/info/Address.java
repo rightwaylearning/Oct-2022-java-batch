@@ -4,6 +4,10 @@ public class Address {
 
 	String addressLine1;
 	String addressLine2;
+	
+	public Address() {
+		System.out.println("I am default constructor");
+	}
 
 	public String getAddressLine1() {
 		return addressLine1;
@@ -24,6 +28,10 @@ public class Address {
 	@Override
 	public String toString() {
 		return "Address [addressLine1=" + addressLine1 + ", addressLine2=" + addressLine2 + "]";
+	}
+	
+	public void m1() {
+		System.out.println("I am address bean");
 	}
 
 }
