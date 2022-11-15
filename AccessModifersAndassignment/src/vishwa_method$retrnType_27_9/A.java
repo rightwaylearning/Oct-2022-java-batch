@@ -1,5 +1,6 @@
 package vishwa_method$retrnType_27_9;
 
+
 public class A {
 
 	int a;

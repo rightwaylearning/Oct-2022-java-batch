@@ -12,7 +12,11 @@ public class Controller {
 		ApplicationContext context = new ClassPathXmlApplicationContext("application_config.xml");
 	
 		 Student s = (Student)context.getBean("student1");
+		 Student s1 = (Student)context.getBean("student1");
+		 Student s2 = (Student)context.getBean("student1");
 		 
-		 System.out.println(s);
+		 System.out.println(s.hashCode());
+		 System.out.println(s1.hashCode());
+		 System.out.println(s2.hashCode());
 	}
 }

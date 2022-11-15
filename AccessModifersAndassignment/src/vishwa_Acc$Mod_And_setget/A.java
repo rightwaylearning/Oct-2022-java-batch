@@ -8,24 +8,23 @@ public class A {
 	
 	private String name;
 	
-//	A(){}
+	A(){}
 	
 	
 	
 
-		public static void main(String[] args) {
-			A a = new A();
-			a.name="vishwa";
-			System.out.println(a);
-		}
+//		public static void main(String[] args) {
+//			A a = new A();
+//			a.name="vishwa";
+//			System.out.println(a);
+//		}
+//		
+	
 		
+String getName(){
+	return name;
 	}
-	
-		
-//String getName(){
-//	return name;
-//	}
-// void setName(String name){
-//	 this.name = name;
-// }
-
+ void setName(String name){
+	 this.name = name;
+ }
+}
