@@ -7,9 +7,11 @@ public class Controller {
 
 	public static void main(String[] args) {
 		
+	    
+	    ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		Student s = (Student)context.getBean("id");
+		System.out.println(s);
 		
-	
-		ApplicationContext  app = new ClassPathXmlApplicationContext("application.xml");
-	
+		
 	}
 }
