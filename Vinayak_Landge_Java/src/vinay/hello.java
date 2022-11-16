@@ -1,10 +1,10 @@
 package vinay;
 
-import vin.hi;
+import vin.*;
 
 public class hello {
 	
-	void m1() {
+	public void m1() {
 		
 		System.out.println("This is m1() of class hello");
 	}
