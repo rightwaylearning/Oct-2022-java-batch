@@ -8,12 +8,12 @@
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
   
 
-   <bean id="id" class="test.Student">
+   <bean id="id" class="test.Student" factory-method="getObject">
       <property name="name" value="sachin"></property>
       <property name="rollNumber" value="23"></property>
    </bean>
    
-   <bean id="id1" class="test.Student" scope="prototype">
+   <bean id="id1" class="test.Student" scope="prototype" factory-method="getObject">
       <property name="name" value="sachin"></property>
       <property name="rollNumber" value="23"></property>
    </bean>

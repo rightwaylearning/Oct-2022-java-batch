@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Scanner;
 
+
 public class ConnectionWithDB {
 	
 	public static void main(String[] args) {
