@@ -10,7 +10,16 @@ public class Controller {
 	    
 	    ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		Student s = (Student)context.getBean("id");
-		System.out.println(s);
+		Student s1 = (Student)context.getBean("id");
+		Student s2 = (Student)context.getBean("id1");
+		
+		System.out.println(s==s1);  // true
+		
+		System.out.println(s1==s2);  // false
+		System.out.println(s ==s2);  //  false
+		
+		
+		//System.out.println(s);
 		
 		
 	}

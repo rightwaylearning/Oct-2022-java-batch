@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  
+
   <beans  
     xmlns="http://www.springframework.org/schema/beans"  
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
@@ -7,19 +7,11 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
   
-
-   <bean id="id" class="test.Student" factory-method="getObject">
-      <property name="name" value="sachin"></property>
-      <property name="rollNumber" value="23"></property>
+   <bean id="a" class="com.bean.test.A">
+       <property name="msg" value="I am A class msg"></property>
    </bean>
    
-   <bean id="id1" class="test.Student" scope="prototype" factory-method="getObject">
-      <property name="name" value="sachin"></property>
-      <property name="rollNumber" value="23"></property>
+   <bean id="b" class="com.bean.test.B">
+       <property name="msg" value="I am B class msg"></property>
    </bean>
-   
-   
-
-
-  
-</beans>  
+</beans>
