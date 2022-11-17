@@ -9,15 +9,15 @@ import java.util.Scanner;
 
 public class ConnectionWithDB {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		
 		try {
 			
-			Scanner sc = new Scanner(System.in);
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels","root","root");			
+			Connection con = ConnectionObject.getConnection();			
+			
 			PreparedStatement statement = con.prepareStatement("select * from employees where officeCode = ?");
-			System.out.println("please Enter officeCode");
-			statement.setInt(1, sc.nextInt());
+			statement.setInt(1, 6);
+			
 			ResultSet result = statement.executeQuery();
 			
 			while(result.next()) {
