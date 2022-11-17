@@ -1,11 +1,28 @@
 package test;
 
-public class Student {
+public class Student implements Cloneable{
 
 	private String name;
 	private Integer rollNumber;
 	private Address address;
+	private static Student student;
 
+	private Student() {}
+	
+	public static synchronized Student getObject() {
+		System.out.println(">>>>>>>>>>>>>>>>");
+		if(student == null) {
+			student = new Student();
+		}
+		
+		return student;
+	}
+		
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		throw new CloneNotSupportedException("dont try it's singletone");
+	}
+	
 	public String getName() {
 		return name;
 	}
