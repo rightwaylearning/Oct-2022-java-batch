@@ -1,0 +1,9 @@
+package Dhanashri_Udar_test;
+
+public class B extends A{
+		
+	void m3() {}
+	void m4() {}
+	
+}
+

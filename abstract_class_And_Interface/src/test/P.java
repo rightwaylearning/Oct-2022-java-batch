@@ -6,3 +6,4 @@ public class P {
 	  System.out.println("I am m1 method of P class");
     }
 }
+  
