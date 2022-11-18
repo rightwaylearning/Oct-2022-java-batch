@@ -1,17 +1,14 @@
 package Nirmal_child_parent_relation;
 
-public class Customer extends CafeMenuCardIpl {
+public class Customer {
 
-	void cofee() {
-		System.out.println("i wannt 2 cofee");
+	void order(CafeMenuCard m) {
+		m.burger();
+		m.cofee();
+		m.mihitodrink();
+		m.pizaa();
+		m.tea();
+		
 	}
 
-	void pizaa() {
-		System.out.println("i want 2 pizaa");
-
-	}
-
-	void burger() {
-		System.out.println("i want 1 burger");
-	}
 }
