@@ -1,4 +1,4 @@
-package student.crud.operation;
+package in.co.rightwaylearning.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jdbc.first.program.ConnectionObject;
+
+
+import in.co.rightwaylearning.models.Student;
+import in.co.rightwaylearning.utility.ConnectionObject;
 
 public class StudentDaoImpl implements StudentDao {
 	Connection con;
@@ -51,30 +54,18 @@ public class StudentDaoImpl implements StudentDao {
 	}
 
 	@Override
-	public List<Student> read() throws SQLException {
-		List<Student> list = new ArrayList<>();
-
+	public ResultSet read() throws SQLException {
 		PreparedStatement stm = con.prepareStatement("select * from student");
 		ResultSet records = stm.executeQuery();
-
-		while (records.next()) {
-			Student s = new Student(records.getInt(1), records.getString(2), records.getString(3), records.getInt(4),records.getString(5));
-			list.add(s);
-		}
-
-		return list;
+		return records;
 	}
 	
 	@Override
-	public Student read(Integer id) throws SQLException {
-		Student s = null;
+	public ResultSet read(Integer id) throws SQLException {
 		PreparedStatement stm = con.prepareStatement("select * from student where id = ?");
 		stm.setInt(1, id);
 		ResultSet records = stm.executeQuery();
-        if(records.next()) {
-        	 s = new Student(records.getInt(1), records.getString(2), records.getString(3), records.getInt(4),records.getString(5));
-        }		
-		return s;
+       	return records;
 	}
 
 }

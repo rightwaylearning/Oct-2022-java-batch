@@ -1,4 +1,4 @@
-package com.jdbc.first.program;
+package in.co.rightwaylearning.utility;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
