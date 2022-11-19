@@ -1,4 +1,4 @@
-package student.crud.operation;
+package in.co.rightwaylearning.models;
 
 public class Student {
 	
