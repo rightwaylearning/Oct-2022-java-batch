@@ -10,7 +10,7 @@ public class Controller {
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 		A a = (A)context.getBean("a");
 		System.out.println("i am ready for service...");
-		System.out.println(a.toString());
+	
 	}
 
 }

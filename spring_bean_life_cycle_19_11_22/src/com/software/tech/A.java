@@ -49,18 +49,18 @@ public class A implements  ApplicationContextAware,InitializingBean, DisposableB
 	}
 	
 
-	public void customInit() {
-		System.out.println("I am custom init method");
-	}
+//	public void customInit() {
+//		System.out.println("I am custom init method");
+//	}
 	
 	@Override
 	public void destroy() throws Exception {
 		System.out.println("I am destroy methdo of DisposableBean");
 	}
 	
-	public void customDestroy() {
-		System.out.println("I am custom detsroy method..");
-	}
+//	public void customDestroy() {
+//		System.out.println("I am custom detsroy method..");
+//	}
 
 
 }

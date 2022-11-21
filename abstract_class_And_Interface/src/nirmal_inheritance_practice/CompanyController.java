@@ -7,9 +7,6 @@ public class CompanyController {
 		Company company = new Company();
 		company.compnaydetail();
 		
-		Companyshow companyshow = new Companyshow();
-		companyshow.compnaydetail2();
-		
 
 	}
 
