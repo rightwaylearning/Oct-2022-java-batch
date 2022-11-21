@@ -2,7 +2,8 @@ package nirmal_set_get;
 
 public class ShowInfo {
 
-	CompayInfo[] getcompanyinfo() {
+	
+	public CompayInfo[] getcompanyinfo() {
 		CompayInfo[] arr = new CompayInfo[4];
 
 		arr[0] = new CompayInfo("infosys", "multiple", 'a');
@@ -17,6 +18,7 @@ public class ShowInfo {
 			System.out.println("-------------------------------------");
 
 		}
+
 
 		return arr;
 
