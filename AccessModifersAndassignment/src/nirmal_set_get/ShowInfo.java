@@ -10,7 +10,7 @@ public class ShowInfo {
 		arr[2] = new CompayInfo("wipro", "limited", 'a');
 		arr[3] = new CompayInfo("cisco", "multiple", 'a');
 
-		for (int i = 0; i < arr.length; i++) {
+		for(int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i].getCompanName());
 			System.out.println(arr[i].getCompanyEmployee());
 			System.out.println(arr[i].getCompanyGrade());

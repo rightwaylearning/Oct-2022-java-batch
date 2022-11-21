@@ -4,7 +4,7 @@ public class SMcontrollr {
 
 	
 	public static void main(String[] args) {
-		Student[] Sarray = new Student[3];//{"vishwa","nirmal","kuldip"};
+		Student[] Sarray = new Student[3];    //{"vishwa","nirmal","kuldip"};
 		
 		Student x = new Student();
 		x.name="vishwa";
