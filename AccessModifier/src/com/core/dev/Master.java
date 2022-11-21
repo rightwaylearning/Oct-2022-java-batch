@@ -1,10 +1,10 @@
 package com.core.dev;
 
- class Master {
+ public class Master {
 
-	 String data;
+	public  String data;
 	
-	 String m1() {
+	 public String m1() {
 		this.data = "I am Master class";
 		return this.data;
 	}

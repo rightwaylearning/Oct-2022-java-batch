@@ -14,7 +14,7 @@ class info extends Employee {
 	String lastname = "rajput";
 	int id = 34;
 
-	void getEmployeeinfo(String firstname ,String lastname, int id) {
+	public void getEmployeeinfo(String firstname ,String lastname, int id) {
 		System.out.println(firstname);
 		System.out.println(lastname);
 		System.out.println(id);

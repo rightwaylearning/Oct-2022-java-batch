@@ -4,7 +4,7 @@ public class SMcontrollr {
 
 	
 	public static void main(String[] args) {
-		Student[] Sarray = new Student[3];
+		Student[] Sarray = new Student[3];    //{"vishwa","nirmal","kuldip"};
 		
 		Student x = new Student();
 		x.name="vishwa";
@@ -37,28 +37,24 @@ public class SMcontrollr {
 	Marray[1]=m2;
 	
 	x.mks=Marray;
+	y.mks=Marray;
+	z.mks=Marray;
 	
-		System.out.println(x.name);
-		System.out.println(x.rollNumber);
-		System.out.println(y.name);
-		System.out.println(y.rollNumber);
-		System.out.println(z.name);
-		System.out.println(z.rollNumber);
-		//System.out.println()
-		System.out.println("_____________");
-		for(int i=0;i<x.mks.length;i++) {
-			System.out.println(x.mks[i].subName);
-			System.out.println(x.mks[i].score);
-			System.out.println("_________");
-			
-			
+	for (int j = 0; j<Sarray.length;j++) {
+		System.out.println(Sarray[j].name);
+		System.out.println(Sarray[j].rollNumber);
+		for(int i=0;i<Sarray[j].mks.length;i++) {
+			System.out.print(Sarray[j].mks[i].subName);
+			System.out.print("-");
+			System.out.println(Sarray[j].mks[i].score);
 			
 			}
+		System.out.println("___________________");
 		}
 		
 		
 	}
-	
+}
 	
 	
 	
