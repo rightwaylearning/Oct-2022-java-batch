@@ -38,4 +38,29 @@ public class StudentServicesImpl implements IStudentServices {
 		return null;
 	}
 
+	@Override
+	public Student getSingleObject(Integer id) {
+		try {
+		ResultSet data = iStudentDao.getStudentObject(id);
+		if(data.next()) {
+			Student student = new Student(data.getInt(1), data.getString(2), data.getString(3), data.getInt(4),
+					data.getString(5));
+			return student;
+		}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		return null;
+	}
+
+	@Override
+	public Integer updateStudentObject(Student student) {
+		return iStudentDao.updateStudentObject(student);
+	}
+
+	@Override
+	public Integer deleteStudentObject(Integer id) {
+		return iStudentDao.deleteStudentObject(id);
+	}
+
 }
