@@ -4,11 +4,11 @@ public class Employee {
 	private String firstname;
 	private String lastname;
 	private int id;
+
+	
+	 Employee(){};
 	
 	
-	Employee(){}
-
-
 	public String getFirstname() {
 		return firstname;
 	}
