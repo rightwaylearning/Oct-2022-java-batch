@@ -7,11 +7,13 @@ public class Controller {
 
 	public static void main(String[] args) {
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("application_config.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("app.config.xml");
 
-		Employee e = (Employee) context.getBean("Employee1");
+		Address e = (Address) context.getBean("Adr");
 
-		e.showData();
+		
+		System.out.println(e);
+//		e.showData();
 
 	}
 }

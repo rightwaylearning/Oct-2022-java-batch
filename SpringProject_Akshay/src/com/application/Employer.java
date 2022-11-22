@@ -1,18 +1,42 @@
 package com.application;
 
-public class Employee {
+public class Employer {
 
 	private String name;
 	private String designation;
 	private int age;
 	private String Address;
 
-	public Employee(String name, String designation, int age, String Address) {
-		super();
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getDesignation() {
+		return designation;
+	}
+
+	public void setDesignation(String designation) {
 		this.designation = designation;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
 		this.age = age;
-		this.Address = Address;
+	}
+
+	public String getAddress() {
+		return Address;
+	}
+
+	public void setAddress(String address) {
+		Address = address;
 	}
 
 	public void showData() {
