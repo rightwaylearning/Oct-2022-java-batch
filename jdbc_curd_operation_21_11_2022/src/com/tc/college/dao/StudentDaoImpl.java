@@ -48,4 +48,53 @@ public class StudentDaoImpl implements IStudentDao {
 		return null;
 	}
 
+	@Override
+	public ResultSet getStudentObject(Integer id) {
+		try {
+			PreparedStatement stm = con.prepareStatement("select * from student where id = ?");
+			stm.setInt(1, id);
+			ResultSet data = stm.executeQuery();
+			return data;
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return null;
+	}
+
+	@Override
+	public Integer updateStudentObject(Student student) {
+		try {
+			PreparedStatement stm = con.prepareStatement(
+					"update student set first_name = ? , last_name = ?, age = ? , gender = ? where id = ?");
+
+			stm.setString(1, student.getFirstName());
+			stm.setString(2, student.getLastName());
+			stm.setInt(3, student.getAge());
+			stm.setString(4, student.getGender());
+			stm.setInt(5, student.getId());
+
+			return stm.executeUpdate();
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return null;
+	}
+
+	@Override
+	public Integer deleteStudentObject(Integer id) {
+		if (id != null) {
+			try {
+				PreparedStatement stm = con.prepareStatement("delete from student where id = ?");
+				stm.setInt(1, id);
+				return stm.executeUpdate();
+
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+		}
+		return null;
+	}
+
 }

@@ -20,4 +20,16 @@ public class MineController {
 	public List<Student> getAllStudentsData() {
 		return iStudentServices.getStudentAllData();
 	}
+	
+	public Student getStudentObject(Integer id) {
+		return iStudentServices.getSingleObject(id);
+	}
+	
+	public Integer updateStudentObject(Student student) {
+		return iStudentServices.updateStudentObject(student);
+	}
+	
+	public Integer deleteStudentObject(Integer id) {
+		return iStudentServices.deleteStudentObject(id);
+	}
 }
