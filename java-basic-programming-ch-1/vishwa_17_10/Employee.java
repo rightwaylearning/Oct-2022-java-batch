@@ -10,11 +10,11 @@ public class Employee {
     static String officeName;
     
     void m1() {
-    	System.out.println("I am m1 method");
+    	System.out.println("I am instance method of m1");
     }
     
     static void s1() {
-    	System.out.println("I am static methdo");
+    	System.out.println("I am static method of s1");
     }
 	
     
@@ -33,7 +33,7 @@ public class Employee {
     	Employee.s1();                           
  
     
-    	//Employee e= new Employee();
+    	Employee e= new Employee();
     	System.out.println(empId);
     	System.out.println(name);
     	System.out.println(cellPhone);
