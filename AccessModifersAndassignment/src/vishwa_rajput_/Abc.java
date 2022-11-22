@@ -1,9 +1,22 @@
 package vishwa_rajput_;
 
-abstract class Abc {
 
-	 void m1() {
-		
+
+public class Abc  {
+
+	 public static void main(String[] args) {
+		 A_practice_file aa = new A_practice_file();
+		  
+		 aa.name="vishwa";
+		 
 	}
-	
+	 
+	 
+	 
 }
+
+  class C{
+	  
+	  A_practice_file aa = new A_practice_file();
+	  
+  }
