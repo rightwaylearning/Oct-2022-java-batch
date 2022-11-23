@@ -1,6 +1,6 @@
 package test;
 
-public class A {
+ public class A {
 
 	final void m1() {
 
