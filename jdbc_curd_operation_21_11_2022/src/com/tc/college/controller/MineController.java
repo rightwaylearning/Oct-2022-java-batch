@@ -3,6 +3,7 @@ package com.tc.college.controller;
 import java.util.List;
 
 import com.tc.college.models.Student;
+import com.tc.college.models.TransectionStatus;
 import com.tc.college.service.IStudentServices;
 import com.tc.college.service.StudentServicesImpl;
 
@@ -32,4 +33,8 @@ public class MineController {
 	public Integer deleteStudentObject(Integer id) {
 		return iStudentServices.deleteStudentObject(id);
 	}
+	
+	 public TransectionStatus fundTransper(Integer custNo, Integer payeeCustNo, Double bal) {
+		 return iStudentServices.fundTransper(custNo, payeeCustNo, bal);
+	 }	
 }

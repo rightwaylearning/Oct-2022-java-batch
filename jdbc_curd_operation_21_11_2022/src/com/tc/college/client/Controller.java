@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.tc.college.controller.MineController;
 import com.tc.college.models.Student;
+import com.tc.college.models.TransectionStatus;
 
 public class Controller {
 
@@ -46,10 +47,12 @@ public class Controller {
 //		System.out.println(s2);
 		
 		// delete  operation
-		Student s3 = c.getStudentObject(3);
-		System.out.println(s3);
-		c.deleteStudentObject(s3.getId());
+//		Student s3 = c.getStudentObject(3);
+//		System.out.println(s3);
+//		c.deleteStudentObject(s3.getId());
 		
+		TransectionStatus obj = c.fundTransper(5678, 1234, 1000.00);
+		System.out.println(obj);
 		
 	}
 }
