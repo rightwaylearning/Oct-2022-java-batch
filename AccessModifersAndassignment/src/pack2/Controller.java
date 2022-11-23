@@ -16,7 +16,7 @@ public class Controller {
 		A a = new A();
 		a.m1();
 		
-		B b= new B();
+		Practice b= new Practice();
 		b.m2();
 		
 		pack2.A a1 = new pack2.A();

@@ -15,17 +15,27 @@ public class Controller {
 		c.m3(); // I am m3 method of Parent class
 		
 		Parent p= new Child();
+
 		p.m1(); 
 		p.m2();
 		p.m3();
 		
+		
+        caller(p);
+
+		p.m1(); 
+		p.m2();
+		p.m3();
+		p.m1();
+		
 		caller(p);
+
 		
 	}
 	
 	static void caller(Parent p) {
 		p.m1(); 
-		p.m2();
+	    p.m2();
 		p.m3();
 	}
 	
