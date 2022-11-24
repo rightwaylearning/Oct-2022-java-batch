@@ -1,6 +1,6 @@
-package nirmal_parent_child;
+package omkar_pawar_relationship;
 
- class Chipublicld extends Parent{
+class Chipublicld extends Parent{
 
 	void m2() {
 		System.out.println("i am a m2 method of class child");
