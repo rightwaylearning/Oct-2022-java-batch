@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import com.tc.college.models.Student;
+import com.tc.college.models.TransectionStatus;
 
 public class StudentDaoImpl implements IStudentDao {
 
@@ -94,6 +95,70 @@ public class StudentDaoImpl implements IStudentDao {
 				System.out.println(e);
 			}
 		}
+		return null;
+	}
+	
+	private Double getBalance(Integer mineCutNo) {
+		try {
+			PreparedStatement stm = con.prepareStatement("select * from account where cust_no = ?");
+		    stm.setInt(1, mineCutNo);
+		    ResultSet r = stm.executeQuery();
+		    if(r.next()) {
+		    Double currentBal = r.getDouble(4);
+		    return currentBal;
+		    }
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+		return null;
+	}
+
+	@Override
+	public TransectionStatus fundTransper(Integer mineCutNo, Integer payeeCustNo, Double bal) {
+		try {
+			Double currentBal = getBalance(mineCutNo);
+			 if(currentBal >= bal) {
+				 
+				 con.setAutoCommit(false);
+				 
+				 PreparedStatement stm = con.prepareStatement("update account set bal= ? where cust_no= ?");
+				 stm.setDouble(1, currentBal - bal);
+				 stm.setInt(2, mineCutNo);
+				 stm.executeUpdate();
+				 
+				 int d = 10/0;
+				 Double currentPayeeBal = getBalance(payeeCustNo);
+				 
+				 PreparedStatement stm1 = con.prepareStatement("update account set bal= ? where cust_no= ?");
+				 stm1.setDouble(1, currentPayeeBal + bal);
+				 stm1.setInt(2, payeeCustNo);
+				 stm1.executeUpdate();
+				 
+				 
+				 TransectionStatus tx = new TransectionStatus();
+				 tx.setStatus(true);
+				 tx.setMessage("balance transper ");
+				 
+				 con.commit();
+				 return tx;
+				 
+			 }
+			 
+			 
+				 TransectionStatus tx = new TransectionStatus();
+				 tx.setStatus(false);
+				 tx.setMessage("Insufficient balance");
+				 return tx;
+			 
+						
+		}catch(Exception e) {
+			try {
+			   con.rollback();
+			}catch(Exception e1) {}
+			System.out.println(e);
+		}
+		
 		return null;
 	}
 
