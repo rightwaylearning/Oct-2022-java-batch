@@ -5,7 +5,7 @@ public class Hcontroller {
 	
 	public static void main(String[] args) {
 		
-		HotelMenuCard HM = new HotelMenuCardimpls();
+	HotelMenuCard HM = new HotelMenuCardimpls();
 		
 		//HM.coldCofee();
 		

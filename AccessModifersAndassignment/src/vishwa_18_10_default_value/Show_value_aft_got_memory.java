@@ -40,4 +40,5 @@ public class Show_value_aft_got_memory {
 	}
 }
 
-class student {}
+class student {
+}
