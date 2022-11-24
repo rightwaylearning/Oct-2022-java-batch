@@ -7,6 +7,7 @@ import java.util.List;
 import com.tc.college.dao.IStudentDao;
 import com.tc.college.dao.StudentDaoImpl;
 import com.tc.college.models.Student;
+import com.tc.college.models.TransectionStatus;
 
 public class StudentServicesImpl implements IStudentServices {
 
@@ -61,6 +62,11 @@ public class StudentServicesImpl implements IStudentServices {
 	@Override
 	public Integer deleteStudentObject(Integer id) {
 		return iStudentDao.deleteStudentObject(id);
+	}
+
+	@Override
+	public TransectionStatus fundTransper(Integer custNo, Integer payeeCustNo, Double bal) {
+	  return iStudentDao.fundTransper(custNo, payeeCustNo, bal);
 	}
 
 }
