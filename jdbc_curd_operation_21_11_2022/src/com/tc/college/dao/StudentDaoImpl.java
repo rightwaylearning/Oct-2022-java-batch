@@ -4,9 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.List;
 
 import com.tc.college.models.Student;
 import com.tc.college.models.TransectionStatus;
+import com.tc.college.utility.QueryConst;
+import com.tc.college.validate.entity.ValidateStudentEntity;
 
 public class StudentDaoImpl implements IStudentDao {
 
@@ -22,15 +25,20 @@ public class StudentDaoImpl implements IStudentDao {
 	@Override
 	public Integer saveStudentObject(Student student) {
 		try {
-			PreparedStatement stm = con.prepareStatement("insert into student values(?,?,?,?,?)");
+			
+			if(con != null && ValidateStudentEntity.validateStudentObject(student)) {
+			PreparedStatement stm = con.prepareStatement(QueryConst.insertQuery);
+			
 			stm.setInt(1, student.getId());
 			stm.setString(2, student.getFirstName());
 			stm.setString(3, student.getLastName());
 			stm.setInt(4, student.getAge());
 			stm.setString(5, student.getGender());
-
+			
 			int updatedRows = stm.executeUpdate();
+			
 			return updatedRows;
+			}
 		} catch (Exception e) {
 			System.out.println(e);
 		}
@@ -159,6 +167,27 @@ public class StudentDaoImpl implements IStudentDao {
 			System.out.println(e);
 		}
 		
+		return null;
+	}
+
+	@Override
+	public int[] saveStudentBatch(List<Student> list) {
+		try {
+			PreparedStatement stm = con.prepareStatement("insert into student values(?,?,?,?,?)");
+			for(Student student: list) {
+				stm.setInt(1, student.getId());
+				stm.setString(2, student.getFirstName());
+				stm.setString(3, student.getLastName());
+				stm.setInt(4, student.getAge());
+				stm.setString(5, student.getGender());
+				
+				stm.addBatch();
+			}
+		  int[] arr =  stm.executeBatch(); 
+			
+		}catch(Exception e) {
+			System.out.println(e);
+		}
 		return null;
 	}
 

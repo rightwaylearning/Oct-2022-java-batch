@@ -69,4 +69,9 @@ public class StudentServicesImpl implements IStudentServices {
 	  return iStudentDao.fundTransper(custNo, payeeCustNo, bal);
 	}
 
+	@Override
+	public int[] saveStudentBatch(List<Student> list) {
+		return iStudentDao.saveStudentBatch(list);
+	}
+
 }

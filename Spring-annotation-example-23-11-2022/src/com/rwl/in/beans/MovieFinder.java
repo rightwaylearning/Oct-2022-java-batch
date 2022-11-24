@@ -1,12 +1,15 @@
 package com.rwl.in.beans;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MovieFinder {
+@Scope("singletone")
+public class MovieFinder {  // movieFinder
 
-	public void showMovieNames() {
+	public String[] showMovieNames() {
 		
-		System.out.println("I am movie finder....");
+		return new String[] {"KGF capter 2", "RRR"};
+		
 	}
 }

@@ -37,4 +37,8 @@ public class MineController {
 	 public TransectionStatus fundTransper(Integer custNo, Integer payeeCustNo, Double bal) {
 		 return iStudentServices.fundTransper(custNo, payeeCustNo, bal);
 	 }	
+	 
+	 public int[] processStudentBatch(List<Student> list) {
+		 return iStudentServices.saveStudentBatch(list);
+	 }
 }
