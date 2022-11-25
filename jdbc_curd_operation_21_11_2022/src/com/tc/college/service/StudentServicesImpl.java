@@ -7,6 +7,7 @@ import java.util.List;
 import com.tc.college.dao.IStudentDao;
 import com.tc.college.dao.StudentDaoImpl;
 import com.tc.college.models.Student;
+import com.tc.college.models.TransectionStatus;
 
 public class StudentServicesImpl implements IStudentServices {
 
@@ -36,6 +37,41 @@ public class StudentServicesImpl implements IStudentServices {
 		}
 
 		return null;
+	}
+
+	@Override
+	public Student getSingleObject(Integer id) {
+		try {
+		ResultSet data = iStudentDao.getStudentObject(id);
+		if(data.next()) {
+			Student student = new Student(data.getInt(1), data.getString(2), data.getString(3), data.getInt(4),
+					data.getString(5));
+			return student;
+		}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		return null;
+	}
+
+	@Override
+	public Integer updateStudentObject(Student student) {
+		return iStudentDao.updateStudentObject(student);
+	}
+
+	@Override
+	public Integer deleteStudentObject(Integer id) {
+		return iStudentDao.deleteStudentObject(id);
+	}
+
+	@Override
+	public TransectionStatus fundTransper(Integer custNo, Integer payeeCustNo, Double bal) {
+	  return iStudentDao.fundTransper(custNo, payeeCustNo, bal);
+	}
+
+	@Override
+	public int[] saveStudentBatch(List<Student> list) {
+		return iStudentDao.saveStudentBatch(list);
 	}
 
 }

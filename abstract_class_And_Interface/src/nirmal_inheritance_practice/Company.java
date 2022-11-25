@@ -9,6 +9,8 @@ package nirmal_inheritance_practice;
 		 System.out.println(CompanyName);
 		 System.out.println(Companyproject); 
 		 
+		 System.out.println("-----------------------------------");
+//		 has a relationship
 	 }
 
 }
