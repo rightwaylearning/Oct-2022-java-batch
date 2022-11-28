@@ -8,6 +8,7 @@ import com.tc.college.models.TransectionStatus;
 public interface IStudentServices {
 
 	public Integer saveStudentObject(Student student);
+	public int[] saveStudentBatch(List<Student> list);
 	public List<Student> getStudentAllData();
 	public Student getSingleObject(Integer id);
 	public Integer updateStudentObject(Student student);

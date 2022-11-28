@@ -15,5 +15,6 @@
 	<classpathentry kind="lib" path="D:/Spring-Recording/springjars/core/org.springframework.core-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="D:/Spring-Recording/springjars/core/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="D:/JDBC-recording/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="lib" path="D:/Spring-Recording/springjars/misc/org.springframework.context.support-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

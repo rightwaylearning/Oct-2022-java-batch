@@ -6,15 +6,18 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+import com.rwl.in.dao.MovieFinder;
+
+@Component("movieLister")  
+@Scope("singleton")
 public class MovieLister {
 
 	@Value("${msg}")
-	public String message;
+	public String message = "hello";
 	
     @Autowired
     @Qualifier("movieFinder")
-	public MovieFinder finder;
+	public MovieFinder movieFinder;
 	
   
     
@@ -28,11 +31,11 @@ public class MovieLister {
 	
 
 	public MovieFinder getFinder() {
-		return finder;
+		return movieFinder;
 	}
 
-	public void setFinder(MovieFinder finder) {
-		this.finder = finder;
+	public void setFinder(MovieFinder movieFinder) {
+		this.movieFinder = movieFinder;
 	}
 
 }
