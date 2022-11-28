@@ -2,18 +2,19 @@ package vishwa_12_10_constructor;
 
 public class Student {
 
-	int rollNo;
+	
 	String name;
+	int rollNo;
 	String collegeName;
 	
 	Student(){} // zero arg constructor
 	
 	// param constructor
 
-	public Student(int rollNo, String name, String collegeName) {
+	public Student( String name,int rollNo, String collegeName) {
 		
-		this.rollNo = rollNo;
 		this.name = name;
+		this.rollNo = rollNo;
 		this.collegeName = collegeName;
 	}
 	

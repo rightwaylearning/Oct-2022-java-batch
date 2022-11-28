@@ -27,8 +27,8 @@ public class K {
 	public static void main(String[] args) {
 		K k= new K();
 		
-//		L l= new L();
-//		k.m1(l); //
+		L l= new L();
+		k.m1(l); //
 		
 		N n= new Z();
 		k.m1(n); // m1(N)

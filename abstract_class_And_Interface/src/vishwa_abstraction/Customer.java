@@ -4,13 +4,7 @@ public class Customer {
 
 	void order(HotelMenuCard H) {
 		H.coldCofee();
-		
-		
-		
-		
+        H.tea();
 	}
-	
-	
-	
-	
+
 }
