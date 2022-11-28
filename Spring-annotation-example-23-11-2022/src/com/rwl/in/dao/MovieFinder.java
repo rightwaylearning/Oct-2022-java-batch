@@ -1,10 +1,11 @@
-package com.rwl.in.beans;
+package com.rwl.in.dao;
+
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
-@Scope("singletone")
+@Component("movieFinder")
+@Scope("singleton")
 public class MovieFinder {  // movieFinder
 
 	public String[] showMovieNames() {
