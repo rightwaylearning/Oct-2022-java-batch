@@ -2,9 +2,9 @@ package method_overloading;
 
 public class AutomaticPramotion {
 
-//	void m1(float f1) {
-//		System.out.println("float");
-//	}
+	void m1(float f1) {
+		System.out.println("float");
+	}
 //	
 //	void m1(short a) {
 //		System.out.println("short");

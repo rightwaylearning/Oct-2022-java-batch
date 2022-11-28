@@ -1,6 +1,6 @@
 package nirmal_parent_child;
 
-public class Child extends Parent{
+ class Chipublicld extends Parent{
 
 	void m2() {
 		System.out.println("i am a m2 method of class child");

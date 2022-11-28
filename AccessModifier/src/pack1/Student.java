@@ -6,6 +6,7 @@ public class Student {
 	
 	public Student(){
 		this.name = "Ganesh";
+		//this.name1 = "Sharayu" ;
 	}
 	
 	void m1() {
