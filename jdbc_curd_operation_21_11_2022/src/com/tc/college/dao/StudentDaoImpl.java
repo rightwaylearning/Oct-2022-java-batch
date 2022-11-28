@@ -6,18 +6,24 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.tc.college.models.Student;
 import com.tc.college.models.TransectionStatus;
+import com.tc.college.utility.DBConnection;
 import com.tc.college.utility.QueryConst;
 import com.tc.college.validate.entity.ValidateStudentEntity;
 
+@Component
 public class StudentDaoImpl implements IStudentDao {
 
+	
 	public Connection con;
 
 	public StudentDaoImpl() {
 		try {
-			this.con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "root");
+			this.con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels","root","root");
 		} catch (Exception e) {
 		}
 	}

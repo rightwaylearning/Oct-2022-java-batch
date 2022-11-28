@@ -4,14 +4,21 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
 import com.tc.college.dao.IStudentDao;
 import com.tc.college.dao.StudentDaoImpl;
 import com.tc.college.models.Student;
 import com.tc.college.models.TransectionStatus;
 
+@Component
 public class StudentServicesImpl implements IStudentServices {
 
-	public IStudentDao iStudentDao = new StudentDaoImpl();
+	@Autowired
+	@Qualifier("studentDaoImpl")
+	public IStudentDao iStudentDao;
 
 	@Override
 	public Integer saveStudentObject(Student student) {

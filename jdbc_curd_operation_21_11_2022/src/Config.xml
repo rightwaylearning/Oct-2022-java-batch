@@ -11,8 +11,6 @@
                http://www.springframework.org/schema/context/spring-context-3.0.xsd">  
  
      <context:annotation-config></context:annotation-config>
-     <context:component-scan base-package="com.rwl.in.beans,com.rwl.in.dao"></context:component-scan>
-     <context:property-placeholder location="data.properties"/>
-     
-     
+     <context:component-scan base-package="com.tc.college.dao,com.tc.college.service,com.tc.college.utility,com.tc.college.controller"></context:component-scan>
+     <context:property-placeholder location="data.properties"/>     
   </beans>

@@ -1,25 +1,25 @@
 package com.rwl.in.beans;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.rwl.in.dao.MovieFinder;
 
 public class Controller {
 
 	public static void main(String[] args) {
 
-		ApplicationContext app = new AnnotationConfigApplicationContext();
-        
-//		MovieLister m = (MovieLister)app.getBean("movieLister");
-//
-//		System.out.println(m.getMessage());
+		ApplicationContext app = new ClassPathXmlApplicationContext("Config.xml");
 
-		MovieFinder finder = (MovieFinder)app.getBean("movieFinder");
+		MovieLister lister = app.getBean(MovieLister.class);
+		MovieFinder finder = lister.getFinder();
 		
 		String[] names = finder.showMovieNames();
 		
 		for(String n:names) {
 			System.out.println(n);
 		}
+		System.out.println(lister.getMessage());
 
 	}
 }
