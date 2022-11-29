@@ -15,5 +15,6 @@ public class A {
 		A a=new A();
 		Byte b=10;
 		a.m1(b); // byte
+		
 	}
 }
