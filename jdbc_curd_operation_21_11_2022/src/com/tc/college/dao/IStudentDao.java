@@ -1,6 +1,7 @@
 package com.tc.college.dao;
 
 import java.sql.ResultSet;
+import java.util.List;
 
 import com.tc.college.models.Student;
 import com.tc.college.models.TransectionStatus;
@@ -8,6 +9,7 @@ import com.tc.college.models.TransectionStatus;
 public interface IStudentDao {
 
 	public Integer saveStudentObject(Student student);
+	public int[] saveStudentBatch(List<Student> list);
 	public ResultSet getStudentAllData();
 	public ResultSet getStudentObject(Integer id);
 	public Integer updateStudentObject(Student student);
