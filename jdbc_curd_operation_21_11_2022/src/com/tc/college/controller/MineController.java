@@ -2,14 +2,20 @@ package com.tc.college.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
 import com.tc.college.models.Student;
 import com.tc.college.models.TransectionStatus;
 import com.tc.college.service.IStudentServices;
-import com.tc.college.service.StudentServicesImpl;
 
+@Component
 public class MineController {
 
-	public IStudentServices iStudentServices = new StudentServicesImpl();
+	@Autowired
+	@Qualifier("studentServicesImpl")
+	public IStudentServices iStudentServices;;
 
 	public Integer insertStudentObject(Student student) {
 		if (student != null && student.getId() != null) {
@@ -37,4 +43,8 @@ public class MineController {
 	 public TransectionStatus fundTransper(Integer custNo, Integer payeeCustNo, Double bal) {
 		 return iStudentServices.fundTransper(custNo, payeeCustNo, bal);
 	 }	
+	 
+	 public int[] processStudentBatch(List<Student> list) {
+		 return iStudentServices.saveStudentBatch(list);
+	 }
 }
