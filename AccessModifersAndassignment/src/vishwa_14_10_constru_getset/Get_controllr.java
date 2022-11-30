@@ -9,8 +9,8 @@ public class Get_controllr {
 	int aa = g.getA();
 	int bb = g.getB();
 	
-	System.out.println(aa);
-	System.out.println(bb);
+	System.out.println(aa); // privacy
+	System.out.println(bb); // privacy
 	
 	//OR
 	
