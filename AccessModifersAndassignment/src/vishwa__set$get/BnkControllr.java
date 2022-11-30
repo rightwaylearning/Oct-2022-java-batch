@@ -14,16 +14,15 @@ public class BnkControllr {
 		// OR with method see line no 19 in Bank class
 
 		Bank banks = new Bank();
-		Bank[] bank = new Bank[4];
-		bank = banks.getBankinfo();
+	    Bank[] bkbk = banks.getBankinfo();
 		
-		for (int i = 0; i < bank.length; i++) {
-			System.out.println(bank[i].getBankName());
-			System.out.println(bank[i].getBranchName());
-			System.out.println(bank[i].getToplist());
+		for (int i = 0; i < bkbk.length; i++) {
+			System.out.println(bkbk[i].getBankName());
+			System.out.println(bkbk[i].getBranchName());
+			System.out.println(bkbk[i].getToplist());
 			System.out.println("_______________________");
 		}
-		// iiif somone says that there is another bank on 2no.?
+		// iiif somone says that there is an another bank on 2no.?
 
 	}
 

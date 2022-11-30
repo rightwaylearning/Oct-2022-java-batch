@@ -3,7 +3,7 @@ package archana_khaire.info;
 public class Controller {
 	public static void main(String[] args) {
 		
-		Student s = new Student();
+		College s = new College();
 		s.name = "Swara";
 		s.rollNumber = 25;
 		                 Marks1[] sub = new Marks1[3];

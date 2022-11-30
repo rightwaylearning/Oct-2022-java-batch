@@ -1,7 +1,6 @@
-package method_overloading;
+package Rutu_MethodOverloading;
 
-public class NewClass {
-
+public class Test {
 	public void m1(int a) {
 		System.out.println("m1(int)");
 	}
@@ -17,21 +16,21 @@ public class NewClass {
 	 
 	
 	public static void main(String[] args) {
-		NewClass n= new NewClass();
-//		Byte b = 10;
-//	n.m1(b);
-//		
+		Test t= new Test();
+		Byte b = 10;
+	    t.m1(b);
+		
 		float f = 23.90f;
-		n.m1(f);
-//		
-//		byte b1 = 10;
-//	n.m1(b1);
-//		
-//		boolean b2 = true;
-//		n.m1(b2);
-//		
-//		Boolean b3 = false;
-//		n.m1(b3);
-//			
+		t.m1(f);
+		
+		byte b1 = 10;
+    	t.m1(b1);
+		
+		boolean b2 = true;
+		t.m1(b2);
+		
+	     Boolean b3 = false;
+	     t.m1(b3);
+			
 	}
 }

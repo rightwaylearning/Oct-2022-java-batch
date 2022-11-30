@@ -1,13 +1,11 @@
 package vishwa_acc$mod;
 
-
 public class Acontrlr {
 
-	
-public static void main(String[] args) {
-	             System.out.println();
-	             System.out.println("VISHWA");
-	
+	public static void main(String[] args) {
+		System.out.println();
+		System.out.println("VISHWA");
+
 // parent have earned for himself so no need to borrow from child
 // so reverse --> B b = new A();   can't be possible
 // easy way to understand like go through A >>>>>>>>>>>>> B
@@ -30,18 +28,7 @@ public static void main(String[] args) {
 		d.m2();
 		d.m3();
 		d.m4();
-		
-		
-	
+
 	}
 
 }
-
-	
-	
-	
-	
-	
-	
-	
-

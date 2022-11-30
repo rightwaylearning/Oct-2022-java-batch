@@ -36,6 +36,19 @@ public class SMcontrollr {
 		x.mks = Marray;
 		y.mks = Marray;
 		z.mks = Marray;
+		
+//		for (int j = 0; j < Sarray.length; j++) {
+//
+//			System.out.println(Sarray[j].name);
+//			System.out.println(Sarray[j].rollNumber);
+//			for (int i = 0; i < Marray.length; i++) {
+//				System.out.println(Marray[i].subName);
+//				System.out.println(Marray[i].score);
+//			}
+//			System.out.println("____");
+//		}
+		
+		
 
 		for (int j = 0; j < Sarray.length; j++) {
 			System.out.println(Sarray[j].name);

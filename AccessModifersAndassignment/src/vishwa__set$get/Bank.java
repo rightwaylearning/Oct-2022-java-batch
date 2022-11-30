@@ -20,10 +20,10 @@ public class Bank {
 
 		Bank[] bankk = new Bank[4];
 
-		bankk[0] = new Bank("ICICI", "pune", 1);
-		bankk[1] = new Bank("SBI", "mumbai", 2);
-		bankk[2] = new Bank("HDFC", "delhi", 3);
-		bankk[3] = new Bank("UNION", "dondaicha", 4);
+		bankk[0] = new Bank("ICICI", "pune",1);
+		bankk[1] = new Bank("SBI", "mumbai",2);
+		bankk[2] = new Bank("HDFC", "delhi",3);
+		bankk[3] = new Bank("UNION", "dondaicha",4);
 		return bankk;
 	}
 
