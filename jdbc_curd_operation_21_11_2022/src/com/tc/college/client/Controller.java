@@ -1,32 +1,42 @@
 
 package com.tc.college.client;
 
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import com.tc.college.controller.MineController;
 import com.tc.college.models.Student;
 
 public class Controller {
+	
 
 	public static void main(String[] args) {
 		
-		MineController c = new MineController();
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("Config.xml");
+		
+		MineController c = ctx.getBean(MineController.class);
 		
 		// insert single object
-		Student s = new Student();
-		s.setId(14);
-		s.setFirstName("Kedar");
-		s.setAge(37);
-		s.setGender("male");
-		
-		Integer i = c.insertStudentObject(s);
-		System.out.println("number of object inserted "+ i);
+//		Student s = new Student();
+//		s.setId(14);
+//		s.setFirstName("Kedar");
+//		s.setAge(37);
+//		s.setGender("male");
+//		
+//		Integer i = c.insertStudentObject(s);
+//		System.out.println("number of object inserted "+ i);
 		
 		// read all objects
-//		List<Student> data = c.getAllStudentsData();
-//		Iterator<Student> itr = data.iterator();
-//		while(itr.hasNext()) {
-//			Student s1 = itr.next();
-//			System.out.println(s1);
-//		}
+		List<Student> data = c.getAllStudentsData();
+		Iterator<Student> itr = data.iterator();
+		while(itr.hasNext()) {
+			Student s1 = itr.next();
+			System.out.println(s1);
+		}
 //		
 		// read single Object & then update
 //		Student s1 = c.getStudentObject(3);
