@@ -6,18 +6,20 @@ public abstract class Father {
 	String where;
 	long expect;
 
-	abstract void getFuture();
+	abstract void getFuture(String homeName,int homeNumber);
 
 }
 class Son extends Father {
 	
 	String homeName="VISHWAPREM";
 	String where="village";
-	long expect= 1500000L;
+	long expect= 1500000l;
 	
 	
-	void getFuture() {
-		System.out.println("wish to will have a ...... :)");
+	void getFuture(String homeName, int homeNumber) {
+		System.out.println(homeName);
+		System.out.println(homeNumber);
+	
 	}
 	
 //public static void main(String[] args) {
