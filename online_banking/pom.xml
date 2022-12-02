@@ -1,47 +1,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   
   <modelVersion>4.0.0</modelVersion>
-  
-  <groupId>www.rwl.in</groupId>
-  <artifactId>school_msng_project</artifactId>
+  <groupId>com.icici.www</groupId>
+  <artifactId>online_banking</artifactId>
   <version>1.0</version>
+  
   <properties>
  <maven.compiler.source>1.8</maven.compiler.source>
  <maven.compiler.target>1.8</maven.compiler.target>
 </properties>
-  <dependencies>
   
-   <dependency>
+  <dependencies>
+  <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
-    <version>4.3.15.RELEASE</version>
-    </dependency>  
-    
-    <dependency>
+    <version>5.0.10.RELEASE</version>
+   </dependency>
+   <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
-    <version>4.3.15.RELEASE</version>
-    </dependency>
-    
-    <dependency>
+    <version>5.0.10.RELEASE</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+<dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context-support</artifactId>
-    <version>4.3.15.RELEASE</version>
-    
-    
-  </dependency>
-</dependencies>
-  <build>
-    <plugins>
-    <plugin>
-		<groupId>org.codehaus.mojo</groupId>
-		<artifactId>exec-maven-plugin</artifactId>
-		<version>1.6.0</version>
-		<configuration>
-			<mainClass>com.rwl.in.Controller</mainClass>
-		</configuration>
-</plugin>
-    </plugins>
-  </build>
+    <version>5.0.10.RELEASE</version>
+</dependency>
 
+  </dependencies>
+  
 </project>
