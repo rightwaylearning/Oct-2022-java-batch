@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+
+  <bean id="student1" class="com.fc.student.info.Student" autowire="byName" init-method="init" destroy-method="exit" scope="prototype">
+      <property name="name" value="Suraj"></property>
+      <property name="rollNumber" value="23"></property>
+      <property name="collegeName" value="Fc College"></property>
+  </bean>
+  
+  <bean id="address" class="com.fc.student.info.Address" init-method="m1">
+      <property name="addressLine1" value="C 505, B A vermont"></property>
+      <property name="addressLine2" value="Baif road, wagholi"></property>
+  </bean>
+
+
+
+  
+</beans>
