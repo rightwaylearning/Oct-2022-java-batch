@@ -31,3 +31,19 @@ public class Student {
 		}
 		}
 		
+
+
+class A{
+	B b;
+	public A(B b)
+	
+	
+	void msg()
+	{}
+	
+}
+class B{
+	A a=new A();
+	void msg();
+}
+
