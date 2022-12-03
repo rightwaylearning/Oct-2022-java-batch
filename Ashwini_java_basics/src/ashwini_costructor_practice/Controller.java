@@ -11,15 +11,7 @@ public class Controller {
 		Student_info student_info4= new Student_info(06,"Ashwini","Dewade");
 		
 		
-		System.out.println(student_info.rollNumber);
-		System.out.println(student_info.fName);
-		System.out.println(student_info.lName);
-		
-//		student_info.rollNumber=01;
-//		student_info.fName="Ashwini";
-//		student_info.lName="Dewade";
-		
-		Student_info[] array=new Student_info[5];
+		Student_info[] array= {student_info,student_info1,student_info2,student_info3,student_info4};
 		for(int i=0;i<array.length;i++) {
 			System.out.println(array[i].rollNumber);
 			System.out.println(array[i].fName);
@@ -29,10 +21,6 @@ public class Controller {
 		}
 		
 		
-//		System.out.println(student_info.rollNumber);
-//		System.out.println(student_info.fName);
-//		System.out.println(student_info.lName);
-//		
 	}
 
 }

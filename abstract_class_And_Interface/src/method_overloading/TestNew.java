@@ -28,7 +28,7 @@ public class TestNew {
 //		
 //		t.m1(new String(""));
 //		
-//		t.m1(t);
+	t.m1(t);
 //		
 		t.m1(new Integer(10));
 //		
