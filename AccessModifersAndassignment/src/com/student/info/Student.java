@@ -6,6 +6,8 @@ public class Student {
 	private String LastName;
 	private int RollNumber;
 	private char Div;
+	
+	
 
 	public Student(String firstName, String lastName, int rollNumber, char div) {
 
@@ -15,6 +17,7 @@ public class Student {
 		Div = div;
 
 	}
+	
 
 	public String getFirstName() {
 		return FirstName;

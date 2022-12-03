@@ -1,7 +1,7 @@
 package com.compayinfo.show;
 
-import com.company.info.CompanyInfo;
 import com.company.info.Company;
+import com.company.info.CompanyInfo;
 
 public class ShowCompanyDetail {
 
