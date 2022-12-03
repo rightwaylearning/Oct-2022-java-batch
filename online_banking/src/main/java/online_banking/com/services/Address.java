@@ -1,8 +1,5 @@
 package online_banking.com.services;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Address {
 
 	private String addressLine1;
