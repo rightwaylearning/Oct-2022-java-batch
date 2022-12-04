@@ -36,8 +36,7 @@ public class StudentDaoImpl implements StudentDao {
 	@Override
 	public Integer update(Student student) throws SQLException {
 
-		PreparedStatement stm = con
-				.prepareStatement("update student set first_name =?,last_name =?,age=?,gender? where id = ?");
+		PreparedStatement stm = con.prepareStatement("update student set first_name =?,last_name =?,age=?,gender? where id = ?");
 		stm.setString(1, student.getFirstName());
 		stm.setString(2, student.getLastName());
 		stm.setInt(3, student.getAge());

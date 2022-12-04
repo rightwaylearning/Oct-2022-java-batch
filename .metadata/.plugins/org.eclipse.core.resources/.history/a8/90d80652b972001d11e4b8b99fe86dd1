@@ -1,0 +1,17 @@
+package vishwa_multi_threading;
+
+public class Controller {
+
+	public static void main(String[] args) {
+
+		int i = 10;
+		while (i > 0) {
+
+			System.out.println("parent" + i);
+			i--;
+
+		}
+
+	}
+
+}
