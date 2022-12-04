@@ -1,0 +1,13 @@
+package vishwa_multi_threading;
+
+public class ChildThread extends Thread{
+
+	int i = 10;
+	while(i>0){
+		
+		System.out.println(i);
+		i--;
+		
+	}
+	
+}
