@@ -6,17 +6,12 @@ public class Acontr {
 
 		A a = new A();
 		a.setRamSize("4GB");
+		
 
 		String r = a.getRamSize();
-		
-		
-		
-		
-		
 
 		System.out.println(r);
-		
-		
+
 	}
 
 }
