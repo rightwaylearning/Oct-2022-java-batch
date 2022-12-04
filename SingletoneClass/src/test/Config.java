@@ -16,6 +16,10 @@ public class Config implements Cloneable{
 	
 	@Override
 	public Object clone() throws CloneNotSupportedException  {
-	  throw new CloneNotSupportedException("Don't craete clone");
+		if(con == null) {
+			con = new Config();
+		}
+		
+		return con;
 	}
 }
