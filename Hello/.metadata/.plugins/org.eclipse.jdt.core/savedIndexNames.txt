@@ -1,1 +1,0 @@
-INDEX VERSION 1.131+D:\Java_WD\Oct-2022-java-batch\Hello\.metadata\.plugins\org.eclipse.jdt.core
