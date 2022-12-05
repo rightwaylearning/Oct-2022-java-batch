@@ -1,0 +1,24 @@
+package vishwa_multi_threading;
+
+public class ChildThread extends Thread{
+
+	
+	void run() {
+		
+
+		int i = 10;                            //Syntax error on token ";", { expected after this token
+		while(i>0){
+			
+			System.out.println(i);
+			i--;
+		
+		
+	}
+	
+	
+	
+	
+		
+	}
+	
+}

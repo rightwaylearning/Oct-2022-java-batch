@@ -1,0 +1,15 @@
+package vishwa_multi;
+
+ interface  Runnable {
+	void run();
+
+}
+class job implements Runnable{
+	@Override
+	public void run() {
+	System.out.println("hello");
+		
+	}
+}
+
+	

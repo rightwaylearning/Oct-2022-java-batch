@@ -1,4 +1,4 @@
-package vishwa_com.student.show.info;
+package src.vishwa_com.student.show.info;
 
 import vishwa_com.student.info.Student;
 import vishwa_com.student.info.StudentInfo;

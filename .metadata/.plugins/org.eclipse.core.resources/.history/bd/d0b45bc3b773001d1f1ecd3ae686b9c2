@@ -1,0 +1,6 @@
+package vishwa_multi;
+
+public class Thread implements Runnable{
+ Runnable r;
+ 
+}

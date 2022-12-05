@@ -1,0 +1,22 @@
+package vishwa_othres;
+
+public class A {
+
+	
+	private String ramSize;
+	
+	A(){}
+//	A(String ramSize){
+//		this.ramSize=ramSize;
+//	}
+	public String getRamSize() {
+		return ramSize;
+	}
+	public void setRamSize(String ramSize) {
+		this.ramSize = ramSize;
+	}
+	
+	
+	
+	
+}
