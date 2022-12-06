@@ -7,7 +7,11 @@ class Task extends Thread{
 		
 		Thread t = Thread.currentThread();
 		
+		for(int i=0;i<100;i++) {
+			
 		System.out.println("This is "+t.getName()+" Thread");
+		
+		}
 		
 	}
 }
@@ -16,7 +20,7 @@ public class EntryClass {
 	
 	public static void main(String[] args) {
 		
-		Thread t = new Thread();
+		Thread t = new Thread(new Task());
 		
 		Task t1 = new Task();
 		
@@ -24,7 +28,11 @@ public class EntryClass {
 		
 		t1.start();
 		
+		for(int i=1;i<1000;i++) {
+		
 		System.out.println("This is main "+t.getName());
+		
+		}
 	}
 
 }
