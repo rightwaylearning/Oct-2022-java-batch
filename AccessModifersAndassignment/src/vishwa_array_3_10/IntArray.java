@@ -4,19 +4,20 @@ public class IntArray {
 
 	public static void main(String[] args) {
 		
-		int[] x = new int[10];// here x is a refrnce of int array
+		int[] x = {10,20,30,40,50,60,70,80,90,100};//new int[10];
+		// here x is a refrnce of int array
 		// int a; > here a is a primitive type variable
 		
-		x[0]=10;
-		x[1]=20;
-		x[2]=30;
-		x[3]=40;
-		x[4]=50;
-		x[5]=60;
-		x[6]=70;
-		x[7]=80;
-		x[8]=90;
-		x[9]=100;
+//		x[0]=10;
+//		x[1]=20;
+//		x[2]=30;
+//		x[3]=40;
+//		x[4]=50;
+//		x[5]=60;
+//		x[6]=70;
+//		x[7]=80;
+//		x[8]=90;
+//		x[9]=100;
 		// here if i want to print arry values or anything in it then
 		// here we used the for loop
 		

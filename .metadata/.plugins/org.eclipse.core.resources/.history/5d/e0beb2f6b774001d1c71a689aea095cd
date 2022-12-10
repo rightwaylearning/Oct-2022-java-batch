@@ -1,0 +1,30 @@
+package multithreading_vinayak;
+
+class Task extends Thread{
+	
+	@Override
+	public void run() {
+		
+		Thread t = Thread.currentThread();
+		
+		System.out.println("This is "+t.getName()+"Thread");
+		
+	}
+}
+
+public class EntryClass {
+	
+	public static void main(String[] args) {
+		
+		Thread t = new Thread();
+		
+		Task t1 = new Task();
+		
+		t1.setName("Child");
+		
+		t1.start();
+		
+		System.out.println("This is main method"+t.getName());
+	}
+
+}

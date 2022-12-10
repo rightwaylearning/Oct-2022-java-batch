@@ -1,0 +1,31 @@
+package vishwa_othres;
+
+public class A {
+
+	
+	private String ramSize;
+	
+	A(){}
+
+	private void m1() {
+		String mobName="pocof1";
+		String mobCompany="MI";
+		System.out.println(mobName);
+		System.out.println(mobCompany);
+	}
+	
+	public static void main(String[] args) {
+		A a = new A();
+		a.m1();
+	}
+
+	public String getRamSize() {
+		return ramSize;
+	}
+
+	public void setRamSize(String ramSize) {
+		this.ramSize = ramSize;
+	}
+	
+	
+}

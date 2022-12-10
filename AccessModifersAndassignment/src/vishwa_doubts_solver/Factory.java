@@ -2,13 +2,20 @@ package vishwa_doubts_solver;
 
 public class Factory {
 
-	public  A getObject(){
+	void m1() {
+
+		//
+	}
+
+	public static void main(String[] args) {
 		
-		A c = new B();
-		return c;
-//		B b = new B();
-//		return b;
+		Factory f= new Factory();
+		f.m1();
+		
+		
 	}
 }
-
-
+	
+	
+	
+	

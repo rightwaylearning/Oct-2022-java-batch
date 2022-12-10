@@ -5,7 +5,9 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
 
+@Component
 public class A implements  ApplicationContextAware,InitializingBean, DisposableBean{
 	Integer x;
 	Integer y;
@@ -49,18 +51,18 @@ public class A implements  ApplicationContextAware,InitializingBean, DisposableB
 	}
 	
 
-	public void customInit() {
-		System.out.println("I am custom init method");
-	}
+//	public void customInit() {
+//		System.out.println("I am custom init method");
+//	}
 	
 	@Override
 	public void destroy() throws Exception {
 		System.out.println("I am destroy methdo of DisposableBean");
 	}
 	
-	public void customDestroy() {
-		System.out.println("I am custom detsroy method..");
-	}
+//	public void customDestroy() {
+//		System.out.println("I am custom detsroy method..");
+//	}
 
 
 }
